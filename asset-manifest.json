@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/moody-app/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/moody-app/static/js/main.3d3c11dc.chunk.js",
+    "main.js.map": "/moody-app/static/js/main.3d3c11dc.chunk.js.map",
+    "runtime-main.js": "/moody-app/static/js/runtime-main.fc0471c6.js",
+    "runtime-main.js.map": "/moody-app/static/js/runtime-main.fc0471c6.js.map",
+    "static/js/2.2eb1aeee.chunk.js": "/moody-app/static/js/2.2eb1aeee.chunk.js",
+    "static/js/2.2eb1aeee.chunk.js.map": "/moody-app/static/js/2.2eb1aeee.chunk.js.map",
+    "static/js/3.d98e1223.chunk.js": "/moody-app/static/js/3.d98e1223.chunk.js",
+    "static/js/3.d98e1223.chunk.js.map": "/moody-app/static/js/3.d98e1223.chunk.js.map",
+    "index.html": "/moody-app/index.html",
+    "service-worker.js": "/moody-app/service-worker.js",
+    "service-worker.js.map": "/moody-app/service-worker.js.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/moody-app/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.2eb1aeee.chunk.js.LICENSE.txt": "/moody-app/static/js/2.2eb1aeee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc0471c6.js",
+    "static/js/2.2eb1aeee.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.3d3c11dc.chunk.js"
+  ]
+}
