@@ -1,11 +1,23 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
 const Elaborating = () => {
+	const [ visible, setVisible ] = useState(false);
+
+	useEffect(() => {
+		setTimeout(() => {
+      setVisible(true);
+    }, 3000);
+
+	}, [])
+
 	return(
 		<div>
 			Sto elaborando i risultati
 			<Link to="/results">
-				<button>Go!</button>
+				{
+					visible && <button>Go!</button>
+				}
 			</Link>	
 		</div>
 	)
