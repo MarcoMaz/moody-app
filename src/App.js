@@ -17,7 +17,6 @@ function App() {
 				<Route path="/elaborating" component={Elaborating} />
 				<Route path="/results" component={Results} />
 			</Router>
-			bau
     </div>
   );
 }
