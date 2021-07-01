@@ -1,19 +1,29 @@
 const fakeData = {
 	"rosi": [
 		{
-			"album": "Plini"
+			"title": "Scented",
+			"artist": "Plini",
+			"imageUrl": "https://via.placeholder.com/150"
 		},
 		{
-			"album": "Dream Theater"
+			"title": "The Mirror",
+			"artist": "Dream Theater",
+			"imageUrl": "https://via.placeholder.com/150"
 		},
 		{
-			"album": "The dark side of the moon"
+			"title": "Wish you were here",
+			"artist": "Pink Floyd",
+			"imageUrl": "https://via.placeholder.com/150"
 		},
 		{
-			"album": "Michael Buble"
+			"title": "I love doing it",
+			"artist": "Michael Buble",
+			"imageUrl": "https://via.placeholder.com/150"
 		},
 		{
-			"album": "The clash"
+			"title": "London Calling",
+			"artist": "The Clash",
+			"imageUrl": "https://via.placeholder.com/150"
 		}
 	]
 }

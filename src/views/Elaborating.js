@@ -12,11 +12,12 @@ const Elaborating = () => {
 	}, [])
 
 	return(
-		<div>
-			Sto elaborando i risultati
+		<div className="Elaborating">
+			<h2 className="Elaborating__headline">Sto elaborando i risultati</h2>
+			<div className="Elaborating__spinner">Spinner</div>
 			<Link to="/results">
 				{
-					visible && <button>Go!</button>
+					visible && <button className="Elaborating__button">Mostrami i risultati</button>
 				}
 			</Link>	
 		</div>
