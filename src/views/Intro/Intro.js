@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+import './Intro.scss'
+
 const Intro = () => {
 	return(
 		<div className="Intro">
