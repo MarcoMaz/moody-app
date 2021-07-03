@@ -16,7 +16,9 @@ const Elaborating = () => {
 	return(
 		<section className="Elaborating">
 			<h2 className="Elaborating__headline">Sto elaborando i risultati</h2>
-			<div className="Elaborating__spinner"></div>
+			{
+				!visible && <div className="Elaborating__spinner"></div>
+			}
 			<Link to="/results">
 				{
 					visible && <button className="Elaborating__button">Mostrami i risultati</button>
