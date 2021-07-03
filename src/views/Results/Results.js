@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import audio from '../../dormono.mp3';
+import dormono from '../../dormono.mp3';
 
 import fakeData from '../fakeData'
 
@@ -14,10 +15,22 @@ const Results = () => {
 		artistChoice: ''
 	})
 	const [ visibleAlbum, setVisibleAlbum ] = useState(false)
+	const [ isPlaying, setIsPlaying ] = useState(false)
 
-	let newAudio = new Audio(audio)
-	const start = () => newAudio.play();
-	const stop = () => newAudio.pause();
+	console.log('isPlaying', isPlaying)
+
+	let audio = useRef();
+
+	const start = () => {
+		audio.current = new Audio(dormono)
+		audio.current.play()
+		setIsPlaying(true)
+	}
+	
+	const stop = () => {
+		audio.current.pause()
+		setIsPlaying(false)
+	}
 
 	const handleClick = (music) => {
 		setActiveChoice({
@@ -58,9 +71,23 @@ const Results = () => {
 					</figure>
 					<div className="Song__slider"></div>
 					<div className="Song__buttons">
-						<button className="Song__play" onClick={start}>Play me!</button>
-						<button className="Song__stop" onClick={stop}>Stop me!</button>
-						<button className="Song__change" onClick={() => setVisibleAlbum(false)}>Cambia canzone</button>
+						{
+							!isPlaying ?
+							(
+								<button className="Song__play" onClick={start}>
+									<FontAwesomeIcon icon="play" />
+								</button>
+							) :
+							(
+								<button className="Song__stop" onClick={stop}>
+									<FontAwesomeIcon icon="stop" />
+								</button>
+							)
+						}
+						<button className="Song__change" onClick={() => {
+							setVisibleAlbum(false); 
+							audio.current.pause()
+							setIsPlaying(false)}}>Cambia canzone</button>
 					</div>					
 				</div>
 			}

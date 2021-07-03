@@ -6,7 +6,7 @@ const Question1 = () => {
 	return(
 		<section className="Question Question-1">
 			<div className="Question__label">
-				<label for="question1">Question #1</label>
+				<label htmlFor="question1">Question #1</label>
 				<input type="text" id="question1" name="question1" required placeholder="Question #1"/>
 			</div>
 			<figure className="Question__image">

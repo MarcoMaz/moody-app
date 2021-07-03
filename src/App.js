@@ -6,7 +6,12 @@ import Question1 from './views/Question1/Question1'
 import Elaborating from './views/Elaborating/Elaborating'
 import Results from './views/Results/Results'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faPlay, faStop } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
+
+library.add(fab, faPlay, faStop)
 
 function App() {
   return (
