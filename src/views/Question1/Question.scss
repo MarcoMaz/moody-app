@@ -1,10 +1,28 @@
 .Question {
+	height: 100vh;
+
 	&__label {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 20px;
+
+		label {
+			margin-bottom: 20px;
+		}
 
 		input {
 			padding: 16px;
+		}
+	}
+
+	&__image {
+		margin-bottom: 20px;
+	}
+
+	&__button {
+
+		&.-disabled {
+			background-color: lighten(#131429, 60%);
 		}
 	}
 }

@@ -8,9 +8,9 @@ const Question1 = () => {
 
 	function SubmitButton(){
     if (question1){
-      return <button type="button">Go!</button>
+      return <button className="Question__button" type="button">Go!</button>
     } else {
-      return <button type="button" disabled>Disabled</button>
+      return <button type="button" className="Question__button -disabled" disabled>Go!</button>
     };
   };
 
