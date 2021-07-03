@@ -1,0 +1,35 @@
+.Results {
+	height: auto;
+
+	&__songs {
+		display: flex;
+		list-style: none;
+		flex-wrap: wrap;
+
+		.Results__song {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 50%;
+		}
+	}
+}
+
+.Song {
+	align-items: center;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+
+	&__buttons {
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+		.Song__play,
+		.Song__stop {
+			width: 50%;
+		}
+	}
+}

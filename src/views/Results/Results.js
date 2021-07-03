@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-import audio from '../dormono.mp3';
+import audio from '../../dormono.mp3';
 
-import fakeData from './fakeData'
+import fakeData from '../fakeData'
+
+import './Results.scss'
 
 const Results = () => {
 	const [ activeChoice, setActiveChoice ] = useState({
@@ -27,7 +29,7 @@ const Results = () => {
 	}
 
 	return(
-		<div className="Results">
+		<section className="Results">
 			<h2 className="Results__headline">questi sono i risultati</h2>
 			<h3 className="Results__subheadline">subheadline</h3>
 			<ul className="Results__songs">
@@ -65,7 +67,7 @@ const Results = () => {
 			<Link to="/">
 				<button className="Results__back">Ritorna all'inizio</button>
 			</Link>
-		</div>
+		</section>
 	)
 }
 

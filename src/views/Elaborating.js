@@ -12,7 +12,7 @@ const Elaborating = () => {
 	}, [])
 
 	return(
-		<div className="Elaborating">
+		<section className="Elaborating">
 			<h2 className="Elaborating__headline">Sto elaborando i risultati</h2>
 			<div className="Elaborating__spinner">Spinner</div>
 			<Link to="/results">
@@ -20,7 +20,7 @@ const Elaborating = () => {
 					visible && <button className="Elaborating__button">Mostrami i risultati</button>
 				}
 			</Link>	
-		</div>
+		</section>
 	)
 }
 

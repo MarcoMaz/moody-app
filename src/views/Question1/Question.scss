@@ -1,0 +1,10 @@
+.Question {
+	&__label {
+		display: flex;
+		flex-direction: column;
+
+		input {
+			padding: 16px;
+		}
+	}
+}
