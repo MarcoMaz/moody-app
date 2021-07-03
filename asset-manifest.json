@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/moody-app/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/moody-app/static/js/main.65e3d36f.chunk.js",
-    "main.js.map": "/moody-app/static/js/main.65e3d36f.chunk.js.map",
-    "runtime-main.js": "/moody-app/static/js/runtime-main.5f8b0ce0.js",
-    "runtime-main.js.map": "/moody-app/static/js/runtime-main.5f8b0ce0.js.map",
-    "static/js/2.d035dd87.chunk.js": "/moody-app/static/js/2.d035dd87.chunk.js",
-    "static/js/2.d035dd87.chunk.js.map": "/moody-app/static/js/2.d035dd87.chunk.js.map",
-    "static/js/3.2d0df4ea.chunk.js": "/moody-app/static/js/3.2d0df4ea.chunk.js",
-    "static/js/3.2d0df4ea.chunk.js.map": "/moody-app/static/js/3.2d0df4ea.chunk.js.map",
+    "main.css": "/moody-app/static/css/main.6354a9ed.chunk.css",
+    "main.js": "/moody-app/static/js/main.6eba7aa5.chunk.js",
+    "main.js.map": "/moody-app/static/js/main.6eba7aa5.chunk.js.map",
+    "runtime-main.js": "/moody-app/static/js/runtime-main.a63d14bb.js",
+    "runtime-main.js.map": "/moody-app/static/js/runtime-main.a63d14bb.js.map",
+    "static/js/2.e06e12fd.chunk.js": "/moody-app/static/js/2.e06e12fd.chunk.js",
+    "static/js/2.e06e12fd.chunk.js.map": "/moody-app/static/js/2.e06e12fd.chunk.js.map",
+    "static/js/3.9f403654.chunk.js": "/moody-app/static/js/3.9f403654.chunk.js",
+    "static/js/3.9f403654.chunk.js.map": "/moody-app/static/js/3.9f403654.chunk.js.map",
     "index.html": "/moody-app/index.html",
     "service-worker.js": "/moody-app/service-worker.js",
     "service-worker.js.map": "/moody-app/service-worker.js.map",
-    "static/css/main.9d5b29c0.chunk.css.map": "/moody-app/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.d035dd87.chunk.js.LICENSE.txt": "/moody-app/static/js/2.d035dd87.chunk.js.LICENSE.txt",
+    "static/css/main.6354a9ed.chunk.css.map": "/moody-app/static/css/main.6354a9ed.chunk.css.map",
+    "static/js/2.e06e12fd.chunk.js.LICENSE.txt": "/moody-app/static/js/2.e06e12fd.chunk.js.LICENSE.txt",
     "static/media/dormono.138fd424.mp3": "/moody-app/static/media/dormono.138fd424.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.5f8b0ce0.js",
-    "static/js/2.d035dd87.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.65e3d36f.chunk.js"
+    "static/js/runtime-main.a63d14bb.js",
+    "static/js/2.e06e12fd.chunk.js",
+    "static/css/main.6354a9ed.chunk.css",
+    "static/js/main.6eba7aa5.chunk.js"
   ]
 }
