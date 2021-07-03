@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
+import './Elaborating.scss'
+
 const Elaborating = () => {
 	const [ visible, setVisible ] = useState(false);
 
@@ -14,7 +16,7 @@ const Elaborating = () => {
 	return(
 		<section className="Elaborating">
 			<h2 className="Elaborating__headline">Sto elaborando i risultati</h2>
-			<div className="Elaborating__spinner">Spinner</div>
+			<div className="Elaborating__spinner"></div>
 			<Link to="/results">
 				{
 					visible && <button className="Elaborating__button">Mostrami i risultati</button>
