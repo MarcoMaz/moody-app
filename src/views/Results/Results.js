@@ -1,6 +1,9 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import Modal from './Modal'
+
 
 import dormono from '../../dormono.mp3';
 
@@ -16,8 +19,6 @@ const Results = () => {
 	})
 	const [ visibleAlbum, setVisibleAlbum ] = useState(false)
 	const [ isPlaying, setIsPlaying ] = useState(false)
-
-	console.log('isPlaying', isPlaying)
 
 	let audio = useRef();
 
@@ -41,7 +42,18 @@ const Results = () => {
 		setVisibleAlbum(true)
 	}
 
+	useEffect( 
+		() => { 
+			( visibleAlbum === true) ?
+				document.querySelector('body').classList.add('blocked') :
+				document.querySelector('body').classList.remove('blocked')
+		} 
+	)
+
+
 	return(
+		<>
+		{ visibleAlbum && <Modal /> }
 		<section className="Results">
 			<h2 className="Results__headline">questi sono i risultati</h2>
 			<h3 className="Results__subheadline">subheadline</h3>
@@ -86,7 +98,7 @@ const Results = () => {
 						}
 						<button className="Song__change" onClick={() => {
 							setVisibleAlbum(false); 
-							audio.current.pause()
+							!undefined && audio.current.pause()
 							setIsPlaying(false)}}>Cambia canzone</button>
 					</div>					
 				</div>
@@ -95,6 +107,7 @@ const Results = () => {
 				<button className="Results__back">Ritorna all'inizio</button>
 			</Link>
 		</section>
+		</>
 	)
 }
 

@@ -27,6 +27,16 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+body {
+  -ms-overflow-style: none;  	/* IE and Edge */
+  scrollbar-width: none;  		/* Firefox */
+
+	&.blocked {
+		overflow-y: hidden;
+	}
+}
+
+
 section {
 	align-items: center;
 	display: flex;
