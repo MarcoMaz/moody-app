@@ -3,6 +3,8 @@
   backdrop-filter: blur(3px);
   height: 100%;
   position: fixed;
+	top: 0;
+	left: 0;
 	transition: all .4s .2s ease-in-out;
   width: 100%;
   z-index: 1000;
@@ -36,13 +38,16 @@
 
 .Song {
 	align-items: center;
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	z-index: 9999;
-	position: absolute;	
+	position: fixed;
 	background: white;
-	top: 25vh;
+	height: 350px;
+	top: calc(50% - 175px);
+	justify-content: space-evenly;
+	border-radius: 5px;
+	padding: 30px;
 
 	&__buttons {
 		display: flex;
@@ -52,6 +57,10 @@
 		.Song__play,
 		.Song__stop {
 			width: 50%;
+		}
+
+		.Song__change {
+			margin: 20px 0;
 		}
 	}
 }

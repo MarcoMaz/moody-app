@@ -98,7 +98,7 @@ const Results = () => {
 						}
 						<button className="Song__change" onClick={() => {
 							setVisibleAlbum(false); 
-							!undefined && audio.current.pause()
+							stop()
 							setIsPlaying(false)}}>Cambia canzone</button>
 					</div>					
 				</div>
