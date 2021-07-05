@@ -5,19 +5,45 @@ import './Elaborating.scss'
 
 const Elaborating = () => {
 	const [ visible, setVisible ] = useState(false);
+	const [ newSentence, setNewSentence ] = useState('');
+
+	useEffect(() => {
+		setTimeout(() => {
+			let maxNumber = sentences.length;
+			let randomNumber = Math.floor((Math.random() * maxNumber) + 1);
+			setNewSentence(sentences[randomNumber])
+		}, 3000)
+	})
 
 	useEffect(() => {
 		setTimeout(() => {
       setVisible(true);
-    }, 3000);
-
+    }, 9000);
 	}, [])
+
+	const sentences = [
+		"Sto elaborando i risultati.",
+		"La pazienza e' la virtu' dei forti.",
+		"Un attimo di pazienza.",
+		"Fra qualche secondo la tua playlist sara' pronta.",
+		"Mm. Hai dei gusti interessanti.",
+		"La musica e' un bene di prima necessita'."
+	]
 
 	return(
 		<section className="Elaborating">
-			<h2 className="Elaborating__headline">Sto elaborando i risultati</h2>
+			{!visible && 
+			<>
+				<h2 className="Elaborating__headline">
+					{ newSentence }
+				</h2>
+				<div className="Elaborating__spinner"></div>
+			</>
+			}
 			{
-				!visible && <div className="Elaborating__spinner"></div>
+				<h2 className="Elaborating__headline">
+					La tua playlist e' pronta.
+				</h2>
 			}
 			<Link to="/results">
 				{
