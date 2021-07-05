@@ -10,7 +10,14 @@
 
 .Results {
 	height: auto;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 
+	&__headline,
+	&__subheadline {
+		margin-bottom: 20px;
+	}
+	
 	&__songs {
 		display: flex;
 		list-style: none;
@@ -21,6 +28,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			margin-bottom: 20px;
 			width: 50%;
 		}
 	}
