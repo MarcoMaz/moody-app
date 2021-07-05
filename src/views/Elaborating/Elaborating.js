@@ -40,7 +40,7 @@ const Elaborating = () => {
 				<div className="Elaborating__spinner"></div>
 			</>
 			}
-			{
+			{ visible &&
 				<h2 className="Elaborating__headline">
 					La tua playlist e' pronta.
 				</h2>
