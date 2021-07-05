@@ -1,9 +1,9 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useContext } from 'react';
+import { Rosify } from '../../App'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Modal from './Modal'
-
 
 import dormono from '../../dormono.mp3';
 
@@ -12,6 +12,8 @@ import fakeData from '../fakeData'
 import './Results.scss'
 
 const Results = () => {
+	const { setUsername } = useContext(Rosify)
+
 	const [ activeChoice, setActiveChoice ] = useState({
 		imageUrlChoice: '',
 		titleChoice: '',
@@ -29,7 +31,10 @@ const Results = () => {
 	}
 	
 	const stop = () => {
-		audio.current.pause()
+
+		if ( audio.current !== undefined){
+			audio.current.pause()
+		}
 		setIsPlaying(false)
 	}
 
@@ -55,7 +60,7 @@ const Results = () => {
 		<>
 		{ visibleAlbum && <Modal /> }
 		<section className="Results">
-			<h2 className="Results__headline">questi sono i risultati</h2>
+			<h2 className="Results__headline">Questi sono i tuoi risultati.</h2>
 			<h3 className="Results__subheadline">subheadline</h3>
 			<ul className="Results__songs">
 				{
@@ -104,7 +109,7 @@ const Results = () => {
 				</div>
 			}
 			<Link to="/">
-				<button className="Results__back">Ritorna all'inizio</button>
+				<button className="Results__back" onClick={() => setUsername('')}>Ritorna all'inizio</button>
 			</Link>
 		</section>
 		</>

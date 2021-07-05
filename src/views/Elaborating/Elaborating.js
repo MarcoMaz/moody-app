@@ -1,24 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { Rosify } from '../../App'
 import { Link } from 'react-router-dom'
 
 import './Elaborating.scss'
 
 const Elaborating = () => {
+	const { username } = useContext(Rosify)
 	const [ visible, setVisible ] = useState(false);
 	const [ newSentence, setNewSentence ] = useState('');
 
 	useEffect(() => {
-		setTimeout(() => {
+		const timer1 = setTimeout(() => {
 			let maxNumber = sentences.length;
 			let randomNumber = Math.floor((Math.random() * maxNumber) + 1);
 			setNewSentence(sentences[randomNumber])
 		}, 3000)
+
+		return () => clearInterval(timer1)
 	})
 
 	useEffect(() => {
-		setTimeout(() => {
+		const timer2 = setTimeout(() => {
       setVisible(true);
     }, 9000);
+
+		return () => {
+			setVisible(true); 
+			clearInterval(timer2)
+		}
 	}, [])
 
 	const sentences = [
@@ -42,7 +51,7 @@ const Elaborating = () => {
 			}
 			{ visible &&
 				<h2 className="Elaborating__headline">
-					La tua playlist e' pronta.
+					La tua playlist e' pronta, { username }.
 				</h2>
 			}
 			<Link to="/results">

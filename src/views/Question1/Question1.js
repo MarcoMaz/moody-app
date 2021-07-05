@@ -1,13 +1,15 @@
-import { useState } from 'react'
+import { useContext } from 'react'
+import { Rosify } from '../../App'
+
 import { Link } from 'react-router-dom'
 
 import './Question.scss'
 
 const Question1 = () => {
-	const [ question1, setQuestion1 ] = useState('');
+	const { username, setUsername } = useContext(Rosify)
 
 	function SubmitButton(){
-    if (question1){
+    if (username){
       return <button className="Question__button" type="button">Go!</button>
     } else {
       return <button type="button" className="Question__button -disabled" disabled>Go!</button>
@@ -19,12 +21,12 @@ const Question1 = () => {
 			<div className="Question__label">
 				<label htmlFor="question1">Inserisci il tuo nome</label>
 				<input 
-					value={question1} 
+					value={username} 
 					type="text" 
 					id="question1" 
 					name="question1"  
 					placeholder="Inserisci il tuo nome"
-					onChange={ e => setQuestion1(e.target.value)} 
+					onChange={ e => setUsername(e.target.value)} 
 					required
 					/>
 			</div>

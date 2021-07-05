@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, createContext } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Intro from './views/Intro/Intro'
@@ -11,10 +11,15 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faPlay, faStop } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
 
+export const Rosify = createContext()
+
 library.add(fab, faPlay, faStop)
 
 function App() {
+	const [ username, setUsername ] = useState('')
+
   return (
+		<Rosify.Provider value={{username, setUsername}}>
     <div className="App">
 			<Router>
 				<Route exact path="/" component={Intro}/>
@@ -23,6 +28,7 @@ function App() {
 				<Route path="/results" component={Results} />
 			</Router>
     </div>
+		</Rosify.Provider>
   );
 }
 
