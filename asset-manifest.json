@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/moody-app/static/css/main.6354a9ed.chunk.css",
-    "main.js": "/moody-app/static/js/main.6eba7aa5.chunk.js",
-    "main.js.map": "/moody-app/static/js/main.6eba7aa5.chunk.js.map",
+    "main.css": "/moody-app/static/css/main.2f5f0311.chunk.css",
+    "main.js": "/moody-app/static/js/main.1b451313.chunk.js",
+    "main.js.map": "/moody-app/static/js/main.1b451313.chunk.js.map",
     "runtime-main.js": "/moody-app/static/js/runtime-main.a63d14bb.js",
     "runtime-main.js.map": "/moody-app/static/js/runtime-main.a63d14bb.js.map",
     "static/js/2.e06e12fd.chunk.js": "/moody-app/static/js/2.e06e12fd.chunk.js",
@@ -12,14 +12,14 @@
     "index.html": "/moody-app/index.html",
     "service-worker.js": "/moody-app/service-worker.js",
     "service-worker.js.map": "/moody-app/service-worker.js.map",
-    "static/css/main.6354a9ed.chunk.css.map": "/moody-app/static/css/main.6354a9ed.chunk.css.map",
+    "static/css/main.2f5f0311.chunk.css.map": "/moody-app/static/css/main.2f5f0311.chunk.css.map",
     "static/js/2.e06e12fd.chunk.js.LICENSE.txt": "/moody-app/static/js/2.e06e12fd.chunk.js.LICENSE.txt",
     "static/media/dormono.138fd424.mp3": "/moody-app/static/media/dormono.138fd424.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.a63d14bb.js",
     "static/js/2.e06e12fd.chunk.js",
-    "static/css/main.6354a9ed.chunk.css",
-    "static/js/main.6eba7aa5.chunk.js"
+    "static/css/main.2f5f0311.chunk.css",
+    "static/js/main.1b451313.chunk.js"
   ]
 }
