@@ -17,8 +17,16 @@ const Question1 = () => {
 	return(
 		<section className="Question Question-1">
 			<div className="Question__label">
-				<label htmlFor="question1">Question #1</label>
-				<input value={question1} onChange={ e => setQuestion1(e.target.value)} type="text" id="question1" name="question1" required placeholder="Question #1"/>
+				<label htmlFor="question1">Inserisci il tuo nome</label>
+				<input 
+					value={question1} 
+					type="text" 
+					id="question1" 
+					name="question1"  
+					placeholder="Inserisci il tuo nome"
+					onChange={ e => setQuestion1(e.target.value)} 
+					required
+					/>
 			</div>
 			<figure className="Question__image">
 				<img alt="This is a text" src="https://via.placeholder.com/150"></img>
