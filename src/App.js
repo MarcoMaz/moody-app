@@ -17,9 +17,10 @@ library.add(fab, faPlay, faStop)
 
 function App() {
 	const [ username, setUsername ] = useState('')
+	const [ isFilterActive, setIsFilterActive ] = useState(false)
 
   return (
-		<Rosify.Provider value={{username, setUsername}}>
+		<Rosify.Provider value={{username, setUsername, isFilterActive, setIsFilterActive}}>
     <div className="App">
 			<Router>
 				<Route exact path="/" component={Intro}/>
