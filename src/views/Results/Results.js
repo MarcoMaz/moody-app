@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Modal from './Modal'
-
 import fakeData from '../fakeData'
 
 import './Results.scss'
@@ -18,9 +17,29 @@ const Results = () => {
 		artistChoice: '',
 		songChoice: ''
 	})
-	const [ visibleAlbum, setVisibleAlbum ] = useState(false)
-	const [ isPlaying, setIsPlaying ] = useState(false)
 
+	const [ visibleAlbum, setVisibleAlbum ] = useState(false)
+
+	const [ isPlaying, setIsPlaying ] = useState(false)
+	
+	let chosePlaylist = (isFilterActive === true ) ? fakeData.real : fakeData.rosi
+
+	// Add a random key
+	let randomSortKey = {}
+
+	chosePlaylist.forEach(d => randomSortKey[d] = Math.random())
+	
+	//add the sortKey property to the individual array entries
+	let dataSortable = chosePlaylist.map(x => {
+		return {
+			...x, 
+			sortKey: Math.random()
+		}
+	})
+	
+	// Sort the List, cut it to six values and create a new playlist
+	const newPlaylist = dataSortable.sort((a, b) => a.sortKey - b.sortKey).slice(0, 6)
+	
 	let audio = useRef();
 
 	const start = (selectedSong) => {
@@ -30,7 +49,6 @@ const Results = () => {
 	}
 	
 	const stop = () => {
-
 		if ( audio.current !== undefined){
 			audio.current.pause()
 		}
@@ -62,30 +80,18 @@ const Results = () => {
 			<h2 className="Results__headline">Questi sono i tuoi risultati.</h2>
 			<h3 className="Results__subheadline">subheadline</h3>
 			<ul className="Results__songs">
-				{ 
-				isFilterActive ?
-				fakeData.real.slice(0, 6).map((music, index) => (
-					<li 
-						className="Results__song" 
-						onClick={() => handleClick(music)} 
-						key={index}>
-						<figure className="Results__song-image" >
-							<img alt="This is somethnig" src={music.imageUrl}></img>
-						</figure>
-						<div className="Results__song-title">{ music.title }</div>
-						<div className="Results__song-artist">{ music.artist }</div>
-					</li>)) :				
-				fakeData.rosi.slice(0, 6).map((music, index) => (
-					<li 
-						className="Results__song" 
-						onClick={() => handleClick(music)} 
-						key={index}>
-						<figure className="Results__song-image" >
-							<img alt="This is somethnig" src={music.imageUrl}></img>
-						</figure>
-						<div className="Results__song-title">{ music.title }</div>
-						<div className="Results__song-artist">{ music.artist }</div>
-					</li>))
+				{
+					newPlaylist.map((music, index) => (
+						<li
+							className="Results__song" 
+							onClick={() => handleClick(music)} 
+							key={index}>
+								<figure className="Results__song-image" >
+									<img alt="This is somethnig" src={music.imageUrl}></img>
+								</figure>
+								<div className="Results__song-title">{ music.title }</div>
+								<div className="Results__song-artist">{ music.artist }</div>
+						</li>))
 				}
 			</ul>
 			{
@@ -119,7 +125,11 @@ const Results = () => {
 				</div>
 			}
 			<Link to="/">
-				<button className="Results__back" onClick={() => {setUsername(''); setIsFilterActive('')}}>Ritorna all'inizio</button>
+				<button className="Results__back" onClick={() => {
+					setUsername(''); 
+					setIsFilterActive('');
+					}}>Ritorna all'inizio
+				</button>
 			</Link>
 		</section>
 		</>
