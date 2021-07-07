@@ -32,6 +32,11 @@
 			justify-content: center;
 			margin-bottom: 20px;
 			width: 50%;
+
+			figure img {
+				height: 120px;
+				width: 120px;
+			}
 		}
 	}
 }
@@ -43,11 +48,16 @@
 	z-index: 9999;
 	position: fixed;
 	background: white;
-	height: 350px;
-	top: calc(50% - 175px);
+	height: 400px;
+	top: calc(50% - 200px);
 	justify-content: space-evenly;
 	border-radius: 5px;
 	padding: 30px;
+
+	&__image img {
+		height: 25vh;
+		margin-bottom: 20px;
+	}
 
 	&__buttons {
 		display: flex;
