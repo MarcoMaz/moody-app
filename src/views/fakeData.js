@@ -15,38 +15,38 @@ import wolfmother from '../songs/cover-wolfmother.mp3';
 const fakeData = {
 	"rosi": [
 		{
-			"title": "Scented",
-			"artist": "Plini",
+			"title": "Occhi da Orientale",
+			"artist": "Daniele Silvestri",
 			"imageUrl": "https://via.placeholder.com/120",
 			"song": africa
 		},
 		{
-			"title": "The Mirror",
-			"artist": "Dream Theater",
+			"title": "Scooby Doo",
+			"artist": "Pinguini Tattici Nucleari",
 			"imageUrl": "https://via.placeholder.com/120",
 			"song": africa
 		},
 		{
-			"title": "Wish you were here",
-			"artist": "Pink Floyd",
+			"title": "The Pretender",
+			"artist": "Foo Fighters",
 			"imageUrl": "https://via.placeholder.com/120",
 			"song": africa
 		},
 		{
-			"title": "I love doing it",
-			"artist": "Michael Buble",
+			"title": "L'anima non conta",
+			"artist": "Zen Circus",
 			"imageUrl": "https://via.placeholder.com/120",
 			"song": africa
 		},
 		{
-			"title": "London Calling",
-			"artist": "The Clash",
+			"title": "Il ballo di San Vito",
+			"artist": "Vinicio Capossela",
 			"imageUrl": "https://via.placeholder.com/120",
 			"song": africa
 		},
 		{
-			"title": "Viva la fica",
-			"artist": "Io",
+			"title": "Coniugati Passeggiare",
+			"artist": "Dente",
 			"imageUrl": "https://via.placeholder.com/120",
 			"song": africa
 		}
