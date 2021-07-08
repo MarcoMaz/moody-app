@@ -5,6 +5,7 @@ import Intro from './views/Intro/Intro'
 import Question1 from './views/Question1/Question1'
 import Elaborating from './views/Elaborating/Elaborating'
 import Results from './views/Results/Results'
+import Video from './views/Video/Video'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -27,6 +28,7 @@ function App() {
 				<Route path="/question1" component={Question1}/>
 				<Route path="/elaborating" component={Elaborating} />
 				<Route path="/results" component={Results} />
+				<Route path="/video" component={Video} />
 			</Router>
     </div>
 		</Rosify.Provider>

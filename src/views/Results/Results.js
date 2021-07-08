@@ -20,6 +20,7 @@ const Results = () => {
 
 	const [ visibleAlbum, setVisibleAlbum ] = useState(false)
 	const [ isPlaying, setIsPlaying ] = useState(false)
+	const [ isOver, setIsOver ] = useState(false)
 	
 	const newPlaylist = useMemo(() => {
 		let chosePlaylist = (isFilterActive === true ) ? fakeData.real : fakeData.rosi
@@ -66,6 +67,15 @@ const Results = () => {
 		setVisibleAlbum(true)
 	}
 
+	let counter = 0;
+
+	const handleVideo = () => {
+		counter++;
+		if (counter === 2){
+			setIsOver(true)
+		}
+ 	}
+
 	useEffect( 
 		() => { 
 			( visibleAlbum === true) ?
@@ -78,7 +88,7 @@ const Results = () => {
 		<>
 		{ visibleAlbum && <Modal /> }
 		<section className="Results">
-			<h2 className="Results__headline">Questi sono i tuoi risultati.</h2>
+			<h2 className="Results__headline" onClick={handleVideo}>Questi sono i tuoi risultati.</h2>
 			<h3 className="Results__subheadline">subheadline</h3>
 			<ul className="Results__songs">
 				{
@@ -124,6 +134,9 @@ const Results = () => {
 					}}>Ritorna all'inizio
 				</button>
 			</Link>
+			{
+				isOver && <Link to="/Video"><button>Vai al video!</button></Link>
+			}
 		</section>
 		</>
 	)
