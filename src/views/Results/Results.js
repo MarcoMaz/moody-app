@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useContext } from 'react';
+import { useState, useRef, useEffect, useContext, useMemo } from 'react';
 import { Rosify } from '../../App'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,27 +19,28 @@ const Results = () => {
 	})
 
 	const [ visibleAlbum, setVisibleAlbum ] = useState(false)
-
 	const [ isPlaying, setIsPlaying ] = useState(false)
 	
-	let chosePlaylist = (isFilterActive === true ) ? fakeData.real : fakeData.rosi
+	const newPlaylist = useMemo(() => {
+		let chosePlaylist = (isFilterActive === true ) ? fakeData.real : fakeData.rosi
 
-	// Add a random key
-	let randomSortKey = {}
+		// Add a random key
+		let randomSortKey = {}
 
-	chosePlaylist.forEach(d => randomSortKey[d] = Math.random())
+		chosePlaylist.forEach(d => randomSortKey[d] = Math.random())
 	
-	//add the sortKey property to the individual array entries
-	let dataSortable = chosePlaylist.map(x => {
-		return {
-			...x, 
-			sortKey: Math.random()
-		}
-	})
-	
-	// Sort the List, cut it to six values and create a new playlist
-	const newPlaylist = dataSortable.sort((a, b) => a.sortKey - b.sortKey).slice(0, 6)
-	
+		//add the sortKey property to the individual array entries
+		let dataSortable = chosePlaylist.map(x => {
+			return {
+				...x, 
+				sortKey: Math.random()
+			}
+		})
+		
+		// Sort the List, cut it to six values and create a new playlist
+		return dataSortable.sort((a, b) => a.sortKey - b.sortKey).slice(0, 6)
+	},[isFilterActive]);
+
 	let audio = useRef();
 
 	const start = (selectedSong) => {
@@ -106,16 +107,8 @@ const Results = () => {
 					<div className="Song__buttons">
 						{
 							!isPlaying ?
-							(
-								<button className="Song__play" onClick={start}>
-									<FontAwesomeIcon icon="play" />
-								</button>
-							) :
-							(
-								<button className="Song__stop" onClick={stop}>
-									<FontAwesomeIcon icon="stop" />
-								</button>
-							)
+							( <button className="Song__play" onClick={start}><FontAwesomeIcon icon="play" /></button>) :
+							( <button className="Song__stop" onClick={stop}><FontAwesomeIcon icon="stop" /></button> )
 						}
 						<button className="Song__change" onClick={() => {
 							setVisibleAlbum(false); 
