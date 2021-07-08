@@ -27,42 +27,50 @@ import verdena2Img from '../images/cover-verdena2.jpg';
 import whitestripesImg from '../images/cover-whitestripes.jpg';
 import wolfmotherImg from '../images/cover-wolfmother.jpg';
 
+// Import Cover Arts' Fake
+import dente from '../images/cover-dente.jpg';
+import foo from '../images/cover-foo.jpg';
+import pinguini from '../images/cover-pinguini.jpg';
+import silvestri from '../images/cover-silvestri.jpg';
+import vinicio from '../images/cover-vinicio.jpg';
+import zen from '../images/cover-zen.jpg';
+
 const fakeData = {
 	"rosi": [
 		{
 			"title": "Occhi da Orientale",
 			"artist": "Daniele Silvestri",
-			"imageUrl": "https://via.placeholder.com/120",
+			"imageUrl": silvestri,
 			"song": africa
 		},
 		{
 			"title": "Scooby Doo",
 			"artist": "Pinguini Tattici Nucleari",
-			"imageUrl": "https://via.placeholder.com/120",
+			"imageUrl": pinguini,
 			"song": africa
 		},
 		{
 			"title": "The Pretender",
 			"artist": "Foo Fighters",
-			"imageUrl": "https://via.placeholder.com/120",
+			"imageUrl": foo,
 			"song": africa
 		},
 		{
 			"title": "L'anima non conta",
 			"artist": "Zen Circus",
-			"imageUrl": "https://via.placeholder.com/120",
+			"imageUrl": zen,
 			"song": africa
 		},
 		{
 			"title": "Il ballo di San Vito",
 			"artist": "Vinicio Capossela",
-			"imageUrl": "https://via.placeholder.com/120",
+			"imageUrl": vinicio,
 			"song": africa
 		},
 		{
 			"title": "Coniugati Passeggiare",
 			"artist": "Dente",
-			"imageUrl": "https://via.placeholder.com/120",
+			"imageUrl": dente,
 			"song": africa
 		}
 	],
