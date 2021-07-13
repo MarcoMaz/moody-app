@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { Rosify } from '../../App'
 
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import question1Image from '../../images/image-question-01.png';
 
@@ -21,6 +22,9 @@ const Question1 = () => {
 	return(
 		<section className="Question Question-1">
 			<div className="Question__progress">
+				<Link to="/question1">
+					<button className="Question__progress__back"><FontAwesomeIcon icon="chevron-left" /></button>
+				</Link>
 				<span className="Question__progress__numbers">1 di 3</span>
 			</div>
 			<div className="Question__label">

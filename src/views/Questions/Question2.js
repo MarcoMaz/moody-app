@@ -27,17 +27,17 @@ const Question2 = () => {
 				</Link>
 				<span className="Question__progress__numbers">2 di 3</span>
 			</div>
-			<div className="Question__label">
+			<div className="Question__checkbox">
 				<p>Per cosa ti serve?</p>
-				<div className="Question__choice1">
+				<div className="Question__choice Question__choice1">
 					<input type="radio" id="questionChoice1" name="contact" value="email" onChange={handleClick} />
     			<label htmlFor="questionChoice1">Email</label>
 				</div>
-				<div className="Question__choice2">
+				<div className="Question__choice Question__choice2">
 					<input type="radio" id="questionChoice2" name="contact" value="phone" onChange={handleClick} />
     			<label htmlFor="questionChoice2">Phone</label>
 				</div>
-				<div className="Question__choice3">
+				<div className="Question__choice Question__choice3">
 					<input type="radio" id="questionChoice3" name="contact" value="fax" onChange={handleClick} />
     			<label htmlFor="questionChoice3">Fax</label>
 				</div>
