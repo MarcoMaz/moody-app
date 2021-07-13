@@ -3,6 +3,9 @@ import { Rosify } from '../../App'
 
 import { Link } from 'react-router-dom'
 
+import question1Image from '../../images/image-question-01.png';
+
+
 import './Question.scss'
 
 const Question1 = () => {
@@ -31,7 +34,7 @@ const Question1 = () => {
 					/>
 			</div>
 			<figure className="Question__image">
-				<img alt="This is a text" src="https://via.placeholder.com/150"></img>
+				<img alt="This is a text" src={question1Image}></img>
 			</figure>
 			<div className="Question__stepper">
 				<span className="Question__stepper__line-behind"></span>

@@ -2,6 +2,9 @@ import { useEffect, useState, useContext } from 'react';
 import { Rosify } from '../../App'
 import { Link } from 'react-router-dom'
 
+import elaborating1Image from '../../images/image-elaborating-01.png';
+import elaborating2Image from '../../images/image-elaborating-02.png';
+
 import './Elaborating.scss'
 
 const Elaborating = () => {
@@ -47,12 +50,20 @@ const Elaborating = () => {
 					{ newSentence }
 				</h2>
 				<div className="Elaborating__spinner"></div>
+				<figure className="Elaborating01__image">
+					<img alt="This is a text" src={elaborating1Image}></img>
+				</figure>
 			</>
 			}
 			{ visible &&
-				<h2 className="Elaborating__headline">
-					La tua playlist e' pronta, { username }.
-				</h2>
+				<>
+					<h2 className="Elaborating__headline">
+						La tua playlist e' pronta, { username }.
+					</h2>
+					<figure className="Elaborating02__image">
+						<img alt="This is a text" src={elaborating2Image}></img>
+					</figure>
+				</>
 			}
 			<Link to="/results">
 				{
