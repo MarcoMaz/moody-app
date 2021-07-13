@@ -2,9 +2,9 @@ import { useContext } from 'react'
 import { Rosify } from '../../App'
 
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import question1Image from '../../images/image-question-01.png';
-
 
 import './Question.scss'
 
@@ -21,6 +21,12 @@ const Question1 = () => {
 
 	return(
 		<section className="Question Question-1">
+			<div className="Question__progress">
+				<Link to="/">
+					<button className="Question__progress__back"><FontAwesomeIcon icon="chevron-left" /></button>
+				</Link>
+				<span className="Question__progress__numbers">1 di 5</span>
+			</div>
 			<div className="Question__label">
 				<label htmlFor="question1">Inserisci il tuo nome</label>
 				<input 
@@ -36,19 +42,6 @@ const Question1 = () => {
 			<figure className="Question__image">
 				<img alt="This is a text" src={question1Image}></img>
 			</figure>
-			<div className="Question__stepper">
-				<span className="Question__stepper__line-behind"></span>
-				<span className="Question__stepper__dot"></span>
-				<span className="Question__stepper__dot"></span>
-				<span className="Question__stepper__dot"></span>
-				<span className="Question__stepper__dot"></span>
-				<span className="Question__stepper__dot"></span>
-			</div>
-			<div className="Question__arrows">
-				<div className="Question__arrows__left"></div>
-				<div className="Question__arrows__right"></div>
-			</div>
-
 			<Link to="/elaborating">
       	<SubmitButton/>
 			</Link>		

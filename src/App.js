@@ -9,12 +9,12 @@ import Video from './views/Video/Video'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faPlay, faStop } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faPlay, faStop } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
 
 export const Rosify = createContext()
 
-library.add(fab, faPlay, faStop)
+library.add(fab, faPlay, faStop, faChevronLeft)
 
 function App() {
 	const [ username, setUsername ] = useState('')
