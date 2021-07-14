@@ -29,7 +29,7 @@ const Question1 = () => {
 			</div>
 			<div className="Question__label">
 				<label htmlFor="question1">
-					That's an easy one.<br/><br/>
+					That's an easy one.<br/>
 					Just type your name.
 				</label>
 				<input 
