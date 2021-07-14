@@ -88,8 +88,8 @@ const Results = () => {
 		<>
 		{ visibleAlbum && <Modal /> }
 		<section className="Results">
-			<h2 className="Results__headline" onClick={handleVideo}>Questi sono i tuoi risultati.</h2>
-			<h3 className="Results__subheadline">subheadline</h3>
+			<h2 className="Results__headline" onClick={handleVideo}>This is your personalized playlist.</h2>
+			<h3 className="Results__subheadline">Have fun!</h3>
 			<ul className="Results__songs">
 				{
 					newPlaylist.map((music, index) => (
@@ -123,7 +123,7 @@ const Results = () => {
 						<button className="Song__change" onClick={() => {
 							setVisibleAlbum(false); 
 							stop()
-							setIsPlaying(false)}}>Cambia canzone</button>
+							setIsPlaying(false)}}>Change song</button>
 					</div>					
 				</div>
 			}
@@ -131,7 +131,7 @@ const Results = () => {
 				<button className="Results__back" onClick={() => {
 					setUsername(''); 
 					setIsFilterActive('');
-					}}>Ritorna all'inizio
+					}}>Start over
 				</button>
 			</Link>
 			{

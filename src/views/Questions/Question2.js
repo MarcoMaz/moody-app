@@ -13,9 +13,9 @@ const Question2 = () => {
 
 	function SubmitButton(){
     if (checked){
-      return <button className="Question__button" type="button">Go!</button>
+      return <button className="Question__button" type="button">Almost there...</button>
     } else {
-      return <button type="button" className="Question__button -disabled" disabled>Go!</button>
+      return <button type="button" className="Question__button -disabled" disabled>Almost there...</button>
     };
   };
 
@@ -25,17 +25,27 @@ const Question2 = () => {
 				<Link to="/question1">
 					<button className="Question__progress__back"><FontAwesomeIcon icon="chevron-left" /></button>
 				</Link>
-				<span className="Question__progress__numbers">2 di 3</span>
+				<span className="Question__progress__numbers">2 / 3</span>
 			</div>
 			<div className="Question__radio">
-				<p>Scegli</p>
+				<p>
+					Usually, where do you listen to music?
+				</p>
 				<div className="Question__radio-item">
 						<input type="radio" id="ritema" name="ritem" value="ropt1" onChange={handleClick}/>
-						<label for="ritema">Option 1</label>
+						<label htmlFor="ritema">In my car</label>
 				</div>
 				<div className="Question__radio-item">
 						<input type="radio" id="ritemb" name="ritem" value="ropt2" onChange={handleClick}/>
-						<label for="ritemb">Option 2</label>
+						<label htmlFor="ritemb">While I do jogging</label>
+				</div>
+				<div className="Question__radio-item">
+						<input type="radio" id="ritemc" name="ritem" value="ritemc" onChange={handleClick}/>
+						<label htmlFor="ritemc">In my bathtub</label>
+				</div>
+				<div className="Question__radio-item">
+						<input type="radio" id="ritemd" name="ritem" value="ritemd" onChange={handleClick}/>
+						<label htmlFor="ritemd">Somewhere else...</label>
 				</div>
 			</div>
 			<figure className="Question__image">

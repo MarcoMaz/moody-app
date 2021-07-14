@@ -34,12 +34,12 @@ const Elaborating = () => {
 	}, [])
 
 	const sentences = [
-		"Sto elaborando i risultati.",
-		"La pazienza e' la virtu' dei forti.",
-		"Un attimo di pazienza.",
-		"Fra qualche secondo la tua playlist sara' pronta.",
-		"Mm. Hai dei gusti interessanti.",
-		"La musica e' un bene di prima necessita'."
+		"I'm elaborating the results",
+		"Patience is a virtue.",
+		"One moment more..",
+		"In few seconds your playlist will be ready.",
+		"Mm. You have an interesting taste.",
+		"Music is the best."
 	]
 
 	return(
@@ -58,7 +58,7 @@ const Elaborating = () => {
 			{ visible &&
 				<>
 					<h2 className="Elaborating__headline">
-						La tua playlist e' pronta, { username }.
+						Your playlist is ready, { username }.
 					</h2>
 					<figure className="Elaborating02__image">
 						<img alt="This is a text" src={elaborating2Image}></img>
@@ -67,7 +67,7 @@ const Elaborating = () => {
 			}
 			<Link to="/results">
 				{
-					visible && <button className="Elaborating__button">Mostrami i risultati</button>
+					visible && <button className="Elaborating__button">Show me the result</button>
 				}
 			</Link>	
 		</section>

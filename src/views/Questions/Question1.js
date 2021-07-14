@@ -13,9 +13,9 @@ const Question1 = () => {
 
 	function SubmitButton(){
     if (username){
-      return <button className="Question__button" type="button">Go!</button>
+      return <button className="Question__button" type="button">Go on!</button>
     } else {
-      return <button type="button" className="Question__button -disabled" disabled>Go!</button>
+      return <button type="button" className="Question__button -disabled" disabled>Go on!</button>
     };
   };
 
@@ -25,16 +25,19 @@ const Question1 = () => {
 				<Link to="/question1">
 					<button className="Question__progress__back"><FontAwesomeIcon icon="chevron-left" /></button>
 				</Link>
-				<span className="Question__progress__numbers">1 di 3</span>
+				<span className="Question__progress__numbers">1 / 3</span>
 			</div>
 			<div className="Question__label">
-				<label htmlFor="question1">Inserisci il tuo nome</label>
+				<label htmlFor="question1">
+					That's an easy one.<br/><br/>
+					Just type your name.
+				</label>
 				<input 
 					value={username} 
 					type="text" 
 					id="question1" 
 					name="question1"  
-					placeholder="Inserisci il tuo nome"
+					placeholder="Your name here"
 					onChange={ e => setUsername(e.target.value)} 
 					required
 					/>

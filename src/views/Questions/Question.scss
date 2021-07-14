@@ -29,6 +29,7 @@
 
 		label {
 			margin-bottom: 20px;
+			text-align: center;
 		}
 	}
 
@@ -46,6 +47,10 @@
 	&__radio {
 		display: flex;
 		flex-direction: column;
+
+		p {
+			text-align: center;
+		}
 
 		&-item {
 			display: inline-block;
