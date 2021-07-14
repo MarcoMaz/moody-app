@@ -27,29 +27,27 @@ const Question3 = () => {
 				</Link>
 				<span className="Question__progress__numbers">3 di 3</span>
 			</div>
-			<div className="Question__checkbox">
-				<p>Quanto sei felice oggi? <br/>
-					0 poco, 5 tanto
-				</p>
-				<div className="Question__choice Question__choice1">
-					<input type="radio" id="questionChoice1" name="contact" value="1" onChange={handleClick} />
-    			<label htmlFor="questionChoice1">1</label>
+			<div className="Question__radio">
+				<p>Quanto sei felice oggi</p>
+				<div className="Question__radio-item">
+						<input type="radio" id="op1" name="opi" value="op1" onChange={handleClick}/>
+						<label for="op1">1</label>
 				</div>
-				<div className="Question__choice Question__choice2">
-					<input type="radio" id="questionChoice2" name="contact" value="2" onChange={handleClick} />
-    			<label htmlFor="questionChoice2">2</label>
+				<div className="Question__radio-item">
+						<input type="radio" id="op2" name="opi" value="op2" onChange={handleClick}/>
+						<label for="op2">2</label>
 				</div>
-				<div className="Question__choice Question__choice3">
-					<input type="radio" id="questionChoice3" name="contact" value="3" onChange={handleClick} />
-    			<label htmlFor="questionChoice3">3</label>
+				<div className="Question__radio-item">
+						<input type="radio" id="op3" name="opi" value="op3" onChange={handleClick}/>
+						<label for="op3">3</label>
 				</div>
-				<div className="Question__choice Question__choice4">
-					<input type="radio" id="questionChoice4" name="contact" value="4" onChange={handleClick} />
-    			<label htmlFor="questionChoice4">4</label>
+				<div className="Question__radio-item">
+						<input type="radio" id="op4" name="opi" value="op4" onChange={handleClick}/>
+						<label for="op4">4</label>
 				</div>
-				<div className="Question__choice Question__choice5">
-					<input type="radio" id="questionChoice5" name="contact" value="5" onChange={handleClick} />
-    			<label htmlFor="questionChoice5">5</label>
+				<div className="Question__radio-item">
+						<input type="radio" id="op5" name="opi" value="op5" onChange={handleClick}/>
+						<label for="op5">5</label>
 				</div>
 			</div>
 			<figure className="Question__image">
