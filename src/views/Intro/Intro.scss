@@ -4,7 +4,25 @@
 	&__subheadline,
 	&__image,
 	&__paragraph {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		text-align: center;
+	}
+
+	&__headline {
+		font-size: 20px;
+
+		span {
+			background-size: 38px;
+			background-repeat: no-repeat;
+			padding: 3px 0 9px 31px;
+		}
+	}
+
+	&__subheadline {
+		font-size: 18px;
+	}
+
+	button {
+		margin: 5px 0;
 	}
 }
