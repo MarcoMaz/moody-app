@@ -1,11 +1,10 @@
 .Question {
-	height: 100vh;
-	justify-content: space-between;
 
 	&__progress {
 		align-items: center;
     display: flex;
-		height: 50px;
+		height: 30px;
+		margin-bottom: 30px;
     justify-content: space-between;
 		width: 100%;
 
@@ -34,10 +33,6 @@
 		}
 	}
 
-	&__image {
-		margin-bottom: 20px;
-	}
-
 	&__button {
 
 		&.-disabled {
@@ -55,7 +50,7 @@
 
 		&-item {
 			display: inline-block;
-			margin: 10px 0 0;
+			margin: 5px 0 0;
 			padding: 0 6px;
 			position: relative;	
 
@@ -95,14 +90,14 @@
 	}	
 }
 
-.Question-1 .Question__progress a {
-	visibility: hidden;
+.Question-1 {
+
+	.Question__progress a {
+		visibility: hidden;
+	}
+
+	.Question__image {
+		margin-bottom: 20px;
+		width: 250px;
+	}
 }
-
-///
-
-
-
-
-
-
