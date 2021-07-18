@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/moody-app/static/css/main.8dc8fcd8.chunk.css",
+    "main.css": "/moody-app/static/css/main.ac81ce80.chunk.css",
     "main.js": "/moody-app/static/js/main.605180f4.chunk.js",
     "main.js.map": "/moody-app/static/js/main.605180f4.chunk.js.map",
     "runtime-main.js": "/moody-app/static/js/runtime-main.0f4b134d.js",
@@ -12,7 +12,7 @@
     "index.html": "/moody-app/index.html",
     "service-worker.js": "/moody-app/service-worker.js",
     "service-worker.js.map": "/moody-app/service-worker.js.map",
-    "static/css/main.8dc8fcd8.chunk.css.map": "/moody-app/static/css/main.8dc8fcd8.chunk.css.map",
+    "static/css/main.ac81ce80.chunk.css.map": "/moody-app/static/css/main.ac81ce80.chunk.css.map",
     "static/js/2.f93a47a0.chunk.js.LICENSE.txt": "/moody-app/static/js/2.f93a47a0.chunk.js.LICENSE.txt",
     "static/media/africa.32822943.mp3": "/moody-app/static/media/africa.32822943.mp3",
     "static/media/cover-deandre.06f105d5.jpg": "/moody-app/static/media/cover-deandre.06f105d5.jpg",
@@ -54,7 +54,7 @@
   "entrypoints": [
     "static/js/runtime-main.0f4b134d.js",
     "static/js/2.f93a47a0.chunk.js",
-    "static/css/main.8dc8fcd8.chunk.css",
+    "static/css/main.ac81ce80.chunk.css",
     "static/js/main.605180f4.chunk.js"
   ]
 }
