@@ -40,8 +40,13 @@ section {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	height: 100vh;
+	justify-content: space-evenly;
 	padding: 5vw 15vw;
+
+	button {
+		margin-bottom: 50px;
+	}
 }
 
 button {
