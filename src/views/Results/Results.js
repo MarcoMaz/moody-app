@@ -89,7 +89,7 @@ const Results = () => {
 		{ visibleAlbum && <Modal /> }
 		<section className="Results">
 			<h2 className="Results__headline" onClick={handleVideo}>This is your personalized playlist.</h2>
-			<h3 className="Results__subheadline">Have fun!</h3>
+			<h3 className="Results__subheadline">Click a song and have fun!</h3>
 			<ul className="Results__songs">
 				{
 					newPlaylist.map((music, index) => (
