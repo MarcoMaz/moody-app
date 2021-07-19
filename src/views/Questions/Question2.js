@@ -48,12 +48,12 @@ const Question2 = () => {
 						<label htmlFor="ritemd">Somewhere else...</label>
 				</div>
 			</div>
-			<figure className="Question__image">
-				<img alt="This is a text" src={question2Image}></img>
-			</figure>
 			<Link to="/question3">
       	<SubmitButton/>
 			</Link>		
+			<figure className="Question__image">
+				<img alt="This is a text" src={question2Image}></img>
+			</figure>
 		</section>
 	)
 }

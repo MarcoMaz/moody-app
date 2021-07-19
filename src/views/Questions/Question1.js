@@ -42,12 +42,12 @@ const Question1 = () => {
 					required
 					/>
 			</div>
-			<figure className="Question__image">
-				<img alt="This is a text" src={question1Image}></img>
-			</figure>
 			<Link to="/question2">
       	<SubmitButton/>
 			</Link>		
+			<figure className="Question__image">
+				<img alt="This is a text" src={question1Image}></img>
+			</figure>
 		</section>
 	)
 }

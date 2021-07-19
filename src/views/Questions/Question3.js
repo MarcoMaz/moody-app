@@ -50,12 +50,12 @@ const Question3 = () => {
 						<label htmlFor="op5">Very good!</label>
 				</div>
 			</div>
-			<figure className="Question__image">
-				<img alt="This is a text" src={question3Image}></img>
-			</figure>
 			<Link to="/elaborating">
       	<SubmitButton/>
 			</Link>		
+			<figure className="Question__image">
+				<img alt="This is a text" src={question3Image}></img>
+			</figure>
 		</section>
 	)
 }
