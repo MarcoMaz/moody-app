@@ -127,13 +127,16 @@ const Results = () => {
 					</div>					
 				</div>
 			}
-			<Link to="/">
+			{
+				!isOver && 
+				<Link to="/">
 				<button className="Results__back" onClick={() => {
 					setUsername(''); 
 					setIsFilterActive('');
 					}}>Start over
 				</button>
 			</Link>
+			}
 			{
 				isOver && <Link to="/Video"><button>Vai al video!</button></Link>
 			}
