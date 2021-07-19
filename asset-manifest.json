@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/moody-app/static/css/main.f191a6b0.chunk.css",
-    "main.js": "/moody-app/static/js/main.95e624bc.chunk.js",
-    "main.js.map": "/moody-app/static/js/main.95e624bc.chunk.js.map",
+    "main.js": "/moody-app/static/js/main.5ab962da.chunk.js",
+    "main.js.map": "/moody-app/static/js/main.5ab962da.chunk.js.map",
     "runtime-main.js": "/moody-app/static/js/runtime-main.359509aa.js",
     "runtime-main.js.map": "/moody-app/static/js/runtime-main.359509aa.js.map",
     "static/js/2.f93a47a0.chunk.js": "/moody-app/static/js/2.f93a47a0.chunk.js",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.359509aa.js",
     "static/js/2.f93a47a0.chunk.js",
     "static/css/main.f191a6b0.chunk.css",
-    "static/js/main.95e624bc.chunk.js"
+    "static/js/main.5ab962da.chunk.js"
   ]
 }
