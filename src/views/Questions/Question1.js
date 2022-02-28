@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { Rosify } from '../../App'
+import { Moodify } from '../../App'
 
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,7 +9,7 @@ import question1Image from '../../images/image-question-01.png';
 import './Question.scss'
 
 const Question1 = () => {
-	const { username, setUsername } = useContext(Rosify)
+	const { username, setUsername } = useContext(Moodify)
 
 	function SubmitButton(){
     if (username){

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useContext, useMemo } from 'react';
-import { Rosify } from '../../App'
+import { Moodify } from '../../App'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -9,7 +9,7 @@ import fakeData from '../fakeData'
 import './Results.scss'
 
 const Results = () => {
-	const { setUsername, isFilterActive, setIsFilterActive } = useContext(Rosify)
+	const { setUsername, isFilterActive, setIsFilterActive } = useContext(Moodify)
 
 	const [ activeChoice, setActiveChoice ] = useState({
 		imageUrlChoice: '',
@@ -20,7 +20,6 @@ const Results = () => {
 
 	const [ visibleAlbum, setVisibleAlbum ] = useState(false)
 	const [ isPlaying, setIsPlaying ] = useState(false)
-	const [ isOver, setIsOver ] = useState(false)
 	
 	const newPlaylist = useMemo(() => {
 		let chosePlaylist = (isFilterActive === true ) ? fakeData.real : fakeData.rosi
@@ -67,15 +66,6 @@ const Results = () => {
 		setVisibleAlbum(true)
 	}
 
-	let counter = 0;
-
-	const handleVideo = () => {
-		counter++;
-		if (counter === 2){
-			setIsOver(true)
-		}
- 	}
-
 	useEffect( 
 		() => { 
 			( visibleAlbum === true) ?
@@ -88,7 +78,7 @@ const Results = () => {
 		<>
 		{ visibleAlbum && <Modal /> }
 		<section className="Results">
-			<h2 className="Results__headline" onClick={handleVideo}>This is your personalized playlist.</h2>
+			<h2 className="Results__headline">This is your personalized playlist.</h2>
 			<h3 className="Results__subheadline">Click a song and have fun!</h3>
 			<ul className="Results__songs">
 				{
@@ -128,7 +118,6 @@ const Results = () => {
 				</div>
 			}
 			{
-				!isOver && 
 				<Link to="/">
 				<button className="Results__back" onClick={() => {
 					setUsername(''); 
@@ -136,9 +125,6 @@ const Results = () => {
 					}}>Start over
 				</button>
 			</Link>
-			}
-			{
-				isOver && <Link to="/Video"><button>Vai al video!</button></Link>
 			}
 		</section>
 		</>

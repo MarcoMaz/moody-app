@@ -1,17 +1,5 @@
-// Import Songs
-import africa from '../songs/africa.mp3';
-import deandre from '../songs/cover-deandre.mp3';
-import ninasimone from '../songs/cover-ninasimone.mp3';
-import rinogaetano from '../songs/cover-rinogaetano.mp3';
-import sexpistols from '../songs/cover-sexpistols.mp3';
-import tenaciousd from '../songs/cover-tenaciousd.mp3';
-import thebeatles from '../songs/cover-thebeatles.mp3';
-import themcrookedvultures from '../songs/cover-themcrookedvultures.mp3';
-import themeters from '../songs/cover-themeters.mp3';
-import verdena1 from '../songs/cover-verdena1.mp3';
-import verdena2 from '../songs/cover-verdena2.mp3';
-import whitestripes from '../songs/cover-whitestripes.mp3';
-import wolfmother from '../songs/cover-wolfmother.mp3';
+// Import Song
+import fakeSong from '../songs/africa.mp3';
 
 // Import Cover Arts
 import deandreImg from '../images/cover-deandre.jpg';
@@ -26,8 +14,6 @@ import verdena1Img from '../images/cover-verdena1.jpg';
 import verdena2Img from '../images/cover-verdena2.jpg';
 import whitestripesImg from '../images/cover-whitestripes.jpg';
 import wolfmotherImg from '../images/cover-wolfmother.jpg';
-
-// Import Cover Arts' Fake
 import dente from '../images/cover-dente.jpg';
 import foo from '../images/cover-foo.jpg';
 import pinguini from '../images/cover-pinguini.jpg';
@@ -41,37 +27,37 @@ const fakeData = {
 			"title": "Occhi da Orientale",
 			"artist": "Daniele Silvestri",
 			"imageUrl": silvestri,
-			"song": africa
+			"song": fakeSong
 		},
 		{
 			"title": "Scooby Doo",
 			"artist": "Pinguini Tattici Nucleari",
 			"imageUrl": pinguini,
-			"song": africa
+			"song": fakeSong
 		},
 		{
 			"title": "The Pretender",
 			"artist": "Foo Fighters",
 			"imageUrl": foo,
-			"song": africa
+			"song": fakeSong
 		},
 		{
 			"title": "L'anima non conta",
 			"artist": "Zen Circus",
 			"imageUrl": zen,
-			"song": africa
+			"song": fakeSong
 		},
 		{
 			"title": "Il ballo di San Vito",
 			"artist": "Vinicio Capossela",
 			"imageUrl": vinicio,
-			"song": africa
+			"song": fakeSong
 		},
 		{
 			"title": "Coniugati Passeggiare",
 			"artist": "Dente",
 			"imageUrl": dente,
-			"song": africa
+			"song": fakeSong
 		}
 	],
 	"real":[
@@ -79,73 +65,73 @@ const fakeData = {
 			"title": "Dormono sulla collina",
 			"artist": "Fabrizio DeAndre'",
 			"imageUrl": deandreImg,
-			"song": deandre
+			"song": fakeSong
 		},
 		{
 			"title": "Feeling Good",
 			"artist": "Nina Simone",
 			"imageUrl": ninasimoneImg,
-			"song": ninasimone
+			"song": fakeSong
 		},
 		{
 			"title": "Berta Filava",
 			"artist": "Rino Gaetano",
 			"imageUrl": rinogaetanoImg,
-			"song": rinogaetano
+			"song": fakeSong
 		},
 		{
 			"title": "No Feelings",
 			"artist": "Sex Pistols",
 			"imageUrl": sexpistolsImg,
-			"song": sexpistols
+			"song": fakeSong
 		},
 		{
 			"title": "Classico",
 			"artist": "Tenacious D",
 			"imageUrl": tenaciousdImg,
-			"song": tenaciousd
+			"song": fakeSong
 		},
 		{
 			"title": "Sexy Sadie",
 			"artist": "The Beatles",
 			"imageUrl": thebeatlesImg,
-			"song": thebeatles
+			"song": fakeSong
 		},
 		{
 			"title": "Cissy Strut",
 			"artist": "The Meters",
 			"imageUrl": themetersImg,
-			"song": themeters
+			"song": fakeSong
 		},
 		{
 			"title": "Elephant",
 			"artist": "Them Crooked Vultures",
 			"imageUrl": themcrookedvulturesImg,
-			"song": themcrookedvultures
+			"song": fakeSong
 		},
 		{
 			"title": "Scegli me",
 			"artist": "Verdena",
 			"imageUrl": verdena1Img,
-			"song": verdena1
+			"song": fakeSong
 		},
 		{
 			"title": "Sipario",
 			"artist": "Verdena",
 			"imageUrl": verdena2Img,
-			"song": verdena2
+			"song": fakeSong
 		},
 		{
 			"title": "Catch Hell Blues",
 			"artist": "The White Stripes",
 			"imageUrl": whitestripesImg,
-			"song": whitestripes
+			"song": fakeSong
 		},
 		{
 			"title": "Woman",
 			"artist": "Wolfmother",
 			"imageUrl": wolfmotherImg,
-			"song": wolfmother
+			"song": fakeSong
 		}
 	]
 }

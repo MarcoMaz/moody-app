@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from 'react';
-import { Rosify } from '../../App'
+import { Moodify } from '../../App'
 import { Link } from 'react-router-dom'
 
 import elaborating2Image from '../../images/image-elaborating-02.png';
@@ -7,7 +7,7 @@ import elaborating2Image from '../../images/image-elaborating-02.png';
 import './Elaborating.scss'
 
 const Elaborating = () => {
-	const { username } = useContext(Rosify)
+	const { username } = useContext(Moodify)
 	const [ visible, setVisible ] = useState(false);
 	const [ newSentence, setNewSentence ] = useState('');
 
