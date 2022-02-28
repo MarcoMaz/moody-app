@@ -9,7 +9,7 @@ import fakeData from '../fakeData'
 import './Results.scss'
 
 const Results = () => {
-	const { setUsername, isFilterActive, setIsFilterActive } = useContext(Moodify)
+	const { setUsername } = useContext(Moodify)
 
 	const [ activeChoice, setActiveChoice ] = useState({
 		imageUrlChoice: '',
@@ -22,7 +22,7 @@ const Results = () => {
 	const [ isPlaying, setIsPlaying ] = useState(false)
 	
 	const newPlaylist = useMemo(() => {
-		let chosePlaylist = (isFilterActive === true ) ? fakeData.real : fakeData.rosi
+		let chosePlaylist = fakeData.real;
 
 		// Add a random key
 		let randomSortKey = {}
@@ -39,7 +39,7 @@ const Results = () => {
 		
 		// Sort the List, cut it to six values and create a new playlist
 		return dataSortable.sort((a, b) => a.sortKey - b.sortKey).slice(0, 6)
-	},[isFilterActive]);
+	},[]);
 
 	let audio = useRef();
 
@@ -121,7 +121,6 @@ const Results = () => {
 				<Link to="/">
 				<button className="Results__back" onClick={() => {
 					setUsername(''); 
-					setIsFilterActive('');
 					}}>Start over
 				</button>
 			</Link>
