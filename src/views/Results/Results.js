@@ -30,9 +30,9 @@ const Results = () => {
 		chosePlaylist.forEach(d => randomSortKey[d] = Math.random())
 	
 		//add the sortKey property to the individual array entries
-		let dataSortable = chosePlaylist.map(x => {
+		let dataSortable = chosePlaylist.map(playlist => {
 			return {
-				...x, 
+				...playlist, 
 				sortKey: Math.random()
 			}
 		})

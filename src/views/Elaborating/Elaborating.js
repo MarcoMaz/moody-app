@@ -2,33 +2,33 @@ import { useEffect, useState, useContext } from 'react';
 import { Moodify } from '../../App'
 import { Link } from 'react-router-dom'
 
-import elaborating2Image from '../../images/image-elaborating-02.png';
+import elaboratingImage from '../../images/image-elaborating-02.png';
 
 import './Elaborating.scss'
 
 const Elaborating = () => {
 	const { username } = useContext(Moodify)
-	const [ visible, setVisible ] = useState(false);
-	const [ newSentence, setNewSentence ] = useState('');
+	const [ isElaboratingVisible, setIsElaboratingVisible ] = useState(false);
+	const [ newHeadline, setNewHeadline ] = useState('');
 
 	useEffect(() => {
-		const timer1 = setTimeout(() => {
+		const timerElaborating = setTimeout(() => {
 			let maxNumber = sentences.length;
 			let randomNumber = Math.floor((Math.random() * maxNumber) + 1);
-			setNewSentence(sentences[randomNumber])
+			setNewHeadline(sentences[randomNumber])
 		}, 3000)
 
-		return () => clearInterval(timer1)
+		return () => clearInterval(timerElaborating)
 	})
 
 	useEffect(() => {
-		const timer2 = setTimeout(() => {
-      setVisible(true);
+		const timerElaboratingEnd = setTimeout(() => {
+      setIsElaboratingVisible(true);
     }, 9000);
 
 		return () => {
-			setVisible(true); 
-			clearInterval(timer2)
+			setIsElaboratingVisible(true); 
+			clearInterval(timerElaboratingEnd)
 		}
 	}, [])
 
@@ -43,28 +43,26 @@ const Elaborating = () => {
 
 	return(
 		<section className="Elaborating">
-			{!visible && 
+			{!isElaboratingVisible && 
 			<>
 				<h2 className="Elaborating__headline">
-					{ newSentence }
+					{ newHeadline }
 				</h2>
 				<div className="Elaborating__spinner"></div>
 			</>
 			}
-			{ visible &&
+			{ isElaboratingVisible &&
 				<>
 					<h2 className="Elaborating__headline">
-						Your playlist is ready, <span>{ username }</span>.
+						Your playlist is ready, <span>{username}</span>.
 					</h2>
-					<figure className="Elaborating02__image">
-						<img alt="This is a text" src={elaborating2Image}></img>
+					<figure className="Elaborating__image">
+						<img alt="This is a text" src={elaboratingImage}></img>
 					</figure>
 				</>
 			}
 			<Link to="/results">
-				{
-					visible && <button className="Elaborating__button">Show me the result</button>
-				}
+				{ isElaboratingVisible && <button className="Elaborating__button">Show me the result</button> }
 			</Link>	
 		</section>
 	)

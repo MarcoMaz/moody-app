@@ -1,5 +1,5 @@
 # Moody App
-[Live Demo](https://marcomaz.github.io/moody-app)
+[Get the PWA](https://marcomaz.github.io/moody-app)
 
 ## Description
 

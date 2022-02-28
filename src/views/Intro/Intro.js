@@ -14,7 +14,7 @@ const Intro = () => {
 				<span style={{ backgroundImage: `url(${background})` }}>oody</span>
 			</h1>
 			<figure className="Intro__image">
-				<img alt="This is a text" src={introImage}></img>
+				<img alt="intro app" src={introImage}></img>
 			</figure>
 			<h2 className="Intro__subheadline">Shape a playlist around your mood</h2>
 			<p className="Intro__paragraph">
