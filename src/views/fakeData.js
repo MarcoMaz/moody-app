@@ -1,133 +1,112 @@
-// Import Song
-import fakeSong from '../songs/africa.mp3';
-
 // Import Cover Arts
-import deandreImg from '../images/cover-deandre.jpg';
-import ninasimoneImg from '../images/cover-ninasimone.jpg';
-import rinogaetanoImg from '../images/cover-rinogaetano.jpg';
-import sexpistolsImg from '../images/cover-sexpistols.jpg';
-import tenaciousdImg from '../images/cover-tenaciousd.jpg';
-import thebeatlesImg from '../images/cover-thebeatles.jpg';
-import themcrookedvulturesImg from '../images/cover-themcrookedvultures.jpg';
-import themetersImg from '../images/cover-themeters.jpg';
-import verdena1Img from '../images/cover-verdena1.jpg';
-import verdena2Img from '../images/cover-verdena2.jpg';
-import whitestripesImg from '../images/cover-whitestripes.jpg';
-import wolfmotherImg from '../images/cover-wolfmother.jpg';
-import dente from '../images/cover-dente.jpg';
-import foo from '../images/cover-foo.jpg';
-import pinguini from '../images/cover-pinguini.jpg';
-import silvestri from '../images/cover-silvestri.jpg';
-import vinicio from '../images/cover-vinicio.jpg';
-import zen from '../images/cover-zen.jpg';
+import deAndreImg from '../assets/cover-deandre.jpg';
+import ninaSimoneImg from '../assets/cover-ninasimone.jpg';
+import rinoGaetanoImg from '../assets/cover-rinogaetano.jpg';
+import sexPistolsImg from '../assets/cover-sexpistols.jpg';
+import tenaciousdImg from '../assets/cover-tenaciousd.jpg';
+import theBeatlesImg from '../assets/cover-thebeatles.jpg';
+import themCrookedVulturesImg from '../assets/cover-themcrookedvultures.jpg';
+import theMetersImg from '../assets/cover-themeters.jpg';
+import verdena1Img from '../assets/cover-verdena1.jpg';
+import verdena2Img from '../assets/cover-verdena2.jpg';
+import whiteStripesImg from '../assets/cover-whitestripes.jpg';
+import wolfmotherImg from '../assets/cover-wolfmother.jpg';
+import denteImg from '../assets/cover-dente.jpg';
+import fooFightersImg from '../assets/cover-foo.jpg';
+import pinguiniImg from '../assets/cover-pinguini.jpg';
+import silvestriImg from '../assets/cover-silvestri.jpg';
+import vinicioCaposselaImg from '../assets/cover-vinicio.jpg';
+import zenCircusImg from '../assets/cover-zen.jpg';
 
 const fakeData = [{
 		"title": "Dormono sulla collina",
 		"artist": "Fabrizio DeAndre'",
-		"imageUrl": deandreImg,
-		"song": fakeSong
+		"imageUrl": deAndreImg
 	},
 	{
 		"title": "Feeling Good",
 		"artist": "Nina Simone",
-		"imageUrl": ninasimoneImg,
-		"song": fakeSong
+		"imageUrl": ninaSimoneImg
 	},
 	{
 		"title": "Berta Filava",
 		"artist": "Rino Gaetano",
-		"imageUrl": rinogaetanoImg,
-		"song": fakeSong
+		"imageUrl": rinoGaetanoImg
 	},
 	{
 		"title": "No Feelings",
 		"artist": "Sex Pistols",
-		"imageUrl": sexpistolsImg,
-		"song": fakeSong
+		"imageUrl": sexPistolsImg
 	},
 	{
 		"title": "Classico",
 		"artist": "Tenacious D",
-		"imageUrl": tenaciousdImg,
-		"song": fakeSong
+		"imageUrl": tenaciousdImg
 	},
 	{
 		"title": "Sexy Sadie",
 		"artist": "The Beatles",
-		"imageUrl": thebeatlesImg,
-		"song": fakeSong
+		"imageUrl": theBeatlesImg
 	},
 	{
 		"title": "Cissy Strut",
 		"artist": "The Meters",
-		"imageUrl": themetersImg,
-		"song": fakeSong
+		"imageUrl": theMetersImg
 	},
 	{
 		"title": "Elephant",
 		"artist": "Them Crooked Vultures",
-		"imageUrl": themcrookedvulturesImg,
-		"song": fakeSong
+		"imageUrl": themCrookedVulturesImg
 	},
 	{
 		"title": "Scegli me",
 		"artist": "Verdena",
-		"imageUrl": verdena1Img,
-		"song": fakeSong
+		"imageUrl": verdena1Img
 	},
 	{
 		"title": "Sipario",
 		"artist": "Verdena",
-		"imageUrl": verdena2Img,
-		"song": fakeSong
+		"imageUrl": verdena2Img
 	},
 	{
 		"title": "Catch Hell Blues",
 		"artist": "The White Stripes",
-		"imageUrl": whitestripesImg,
-		"song": fakeSong
+		"imageUrl": whiteStripesImg
 	},
 	{
 		"title": "Woman",
 		"artist": "Wolfmother",
-		"imageUrl": wolfmotherImg,
-		"song": fakeSong
+		"imageUrl": wolfmotherImg
 	},
 	{
 		"title": "Occhi da Orientale",
 		"artist": "Daniele Silvestri",
-		"imageUrl": silvestri,
-		"song": fakeSong
+		"imageUrl": silvestriImg
 	},
 	{
 		"title": "Scooby Doo",
 		"artist": "Pinguini Tattici Nucleari",
-		"imageUrl": pinguini,
-		"song": fakeSong
+		"imageUrl": pinguiniImg
 	},
 	{
 		"title": "The Pretender",
 		"artist": "Foo Fighters",
-		"imageUrl": foo,
-		"song": fakeSong
+		"imageUrl": fooFightersImg
 	},
 	{
 		"title": "L'anima non conta",
 		"artist": "Zen Circus",
-		"imageUrl": zen,
-		"song": fakeSong
+		"imageUrl": zenCircusImg
 	},
 	{
 		"title": "Il ballo di San Vito",
 		"artist": "Vinicio Capossela",
-		"imageUrl": vinicio,
-		"song": fakeSong
+		"imageUrl": vinicioCaposselaImg
 	},
 	{
 		"title": "Coniugati Passeggiare",
 		"artist": "Dente",
-		"imageUrl": dente,
-		"song": fakeSong
+		"imageUrl": denteImg
 	}
 ]
 

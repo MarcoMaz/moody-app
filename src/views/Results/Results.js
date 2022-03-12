@@ -3,6 +3,8 @@ import { Moodify } from '../../App'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import fakeSong from '../../assets/africa.mp3';
+
 import Modal from './Modal'
 import fakeData from '../fakeData'
 
@@ -61,7 +63,7 @@ const Results = () => {
 			imageUrlChoice: music.imageUrl,
 			titleChoice: music.title,
 			artistChoice: music.artist,
-			songChoice: music.song
+			songChoice: fakeSong
 		})
 		setVisibleAlbum(true)
 	}
