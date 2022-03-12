@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 
-import introImage from '../../images/image-intro.png';
-import background from "../../images/moody-logo.png";
-
+import introImage from '../../assets/image-intro.png';
+import background from "../../assets/moody-logo.png";
 
 import './Intro.scss'
 

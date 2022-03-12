@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import question3Image from '../../images/image-question-03.png';
+import question3Image from '../../assets/image-question-03.png';
 
 import './Question.scss'
 

@@ -4,7 +4,7 @@ import { Moodify } from '../../App'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import question1Image from '../../images/image-question-01.png';
+import question1Image from '../../assets/image-question-01.png';
 
 import './Question.scss'
 

@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from 'react';
 import { Moodify } from '../../App'
 import { Link } from 'react-router-dom'
 
-import elaboratingImage from '../../images/image-elaborating-02.png';
+import elaboratingImage from '../../assets/image-elaborating-02.png';
 
 import './Elaborating.scss'
 
