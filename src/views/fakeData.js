@@ -21,117 +21,114 @@ import silvestri from '../images/cover-silvestri.jpg';
 import vinicio from '../images/cover-vinicio.jpg';
 import zen from '../images/cover-zen.jpg';
 
-const fakeData = {
-	"real":[
-		{
-			"title": "Dormono sulla collina",
-			"artist": "Fabrizio DeAndre'",
-			"imageUrl": deandreImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Feeling Good",
-			"artist": "Nina Simone",
-			"imageUrl": ninasimoneImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Berta Filava",
-			"artist": "Rino Gaetano",
-			"imageUrl": rinogaetanoImg,
-			"song": fakeSong
-		},
-		{
-			"title": "No Feelings",
-			"artist": "Sex Pistols",
-			"imageUrl": sexpistolsImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Classico",
-			"artist": "Tenacious D",
-			"imageUrl": tenaciousdImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Sexy Sadie",
-			"artist": "The Beatles",
-			"imageUrl": thebeatlesImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Cissy Strut",
-			"artist": "The Meters",
-			"imageUrl": themetersImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Elephant",
-			"artist": "Them Crooked Vultures",
-			"imageUrl": themcrookedvulturesImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Scegli me",
-			"artist": "Verdena",
-			"imageUrl": verdena1Img,
-			"song": fakeSong
-		},
-		{
-			"title": "Sipario",
-			"artist": "Verdena",
-			"imageUrl": verdena2Img,
-			"song": fakeSong
-		},
-		{
-			"title": "Catch Hell Blues",
-			"artist": "The White Stripes",
-			"imageUrl": whitestripesImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Woman",
-			"artist": "Wolfmother",
-			"imageUrl": wolfmotherImg,
-			"song": fakeSong
-		},
-		{
-			"title": "Occhi da Orientale",
-			"artist": "Daniele Silvestri",
-			"imageUrl": silvestri,
-			"song": fakeSong
-		},
-		{
-			"title": "Scooby Doo",
-			"artist": "Pinguini Tattici Nucleari",
-			"imageUrl": pinguini,
-			"song": fakeSong
-		},
-		{
-			"title": "The Pretender",
-			"artist": "Foo Fighters",
-			"imageUrl": foo,
-			"song": fakeSong
-		},
-		{
-			"title": "L'anima non conta",
-			"artist": "Zen Circus",
-			"imageUrl": zen,
-			"song": fakeSong
-		},
-		{
-			"title": "Il ballo di San Vito",
-			"artist": "Vinicio Capossela",
-			"imageUrl": vinicio,
-			"song": fakeSong
-		},
-		{
-			"title": "Coniugati Passeggiare",
-			"artist": "Dente",
-			"imageUrl": dente,
-			"song": fakeSong
-		}
-	]
-}
+const fakeData = [{
+		"title": "Dormono sulla collina",
+		"artist": "Fabrizio DeAndre'",
+		"imageUrl": deandreImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Feeling Good",
+		"artist": "Nina Simone",
+		"imageUrl": ninasimoneImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Berta Filava",
+		"artist": "Rino Gaetano",
+		"imageUrl": rinogaetanoImg,
+		"song": fakeSong
+	},
+	{
+		"title": "No Feelings",
+		"artist": "Sex Pistols",
+		"imageUrl": sexpistolsImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Classico",
+		"artist": "Tenacious D",
+		"imageUrl": tenaciousdImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Sexy Sadie",
+		"artist": "The Beatles",
+		"imageUrl": thebeatlesImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Cissy Strut",
+		"artist": "The Meters",
+		"imageUrl": themetersImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Elephant",
+		"artist": "Them Crooked Vultures",
+		"imageUrl": themcrookedvulturesImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Scegli me",
+		"artist": "Verdena",
+		"imageUrl": verdena1Img,
+		"song": fakeSong
+	},
+	{
+		"title": "Sipario",
+		"artist": "Verdena",
+		"imageUrl": verdena2Img,
+		"song": fakeSong
+	},
+	{
+		"title": "Catch Hell Blues",
+		"artist": "The White Stripes",
+		"imageUrl": whitestripesImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Woman",
+		"artist": "Wolfmother",
+		"imageUrl": wolfmotherImg,
+		"song": fakeSong
+	},
+	{
+		"title": "Occhi da Orientale",
+		"artist": "Daniele Silvestri",
+		"imageUrl": silvestri,
+		"song": fakeSong
+	},
+	{
+		"title": "Scooby Doo",
+		"artist": "Pinguini Tattici Nucleari",
+		"imageUrl": pinguini,
+		"song": fakeSong
+	},
+	{
+		"title": "The Pretender",
+		"artist": "Foo Fighters",
+		"imageUrl": foo,
+		"song": fakeSong
+	},
+	{
+		"title": "L'anima non conta",
+		"artist": "Zen Circus",
+		"imageUrl": zen,
+		"song": fakeSong
+	},
+	{
+		"title": "Il ballo di San Vito",
+		"artist": "Vinicio Capossela",
+		"imageUrl": vinicio,
+		"song": fakeSong
+	},
+	{
+		"title": "Coniugati Passeggiare",
+		"artist": "Dente",
+		"imageUrl": dente,
+		"song": fakeSong
+	}
+]
 
 export default fakeData

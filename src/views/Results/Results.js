@@ -22,7 +22,7 @@ const Results = () => {
 	const [ isPlaying, setIsPlaying ] = useState(false)
 	
 	const newPlaylist = useMemo(() => {
-		let chosePlaylist = fakeData.real;
+		let chosePlaylist = fakeData;
 
 		// Add a random key
 		let randomSortKey = {}
