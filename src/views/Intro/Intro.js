@@ -1,31 +1,36 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import introImage from '../../assets/image-intro.png';
 import background from "../../assets/moody-logo.png";
+import copyText from "../../assets/copyText";
+import introImage from "../../assets/image-intro.png";
 
-import './Intro.scss'
+import "./Intro.scss";
 
 const Intro = () => {
+  const { headline, appName, subHeadline, paragraphs, cta } = copyText.intro;
 
-	return(
-		<section className="Intro">
-			<h1 className="Intro__headline">Welcome to
-				<span style={{ backgroundImage: `url(${background})` }}>oody</span>
-			</h1>
-			<figure className="Intro__image">
-				<img alt="intro app" src={introImage}></img>
-			</figure>
-			<h2 className="Intro__subheadline">Shape a playlist around your mood</h2>
-			<p className="Intro__paragraph">
-				YOU answer 3 questions.<br/>
-				WE shape the perfect playlist.<br/><br/>
-				It's THAT easy.
-			</p>
-			<Link to="/question1">
-				<button className="Intro__button">Let's start!</button>
-			</Link>
-		</section>
-	)
-}
+  const appNameWithImage = appName.slice(1);
 
-export default Intro
+  return (
+    <section className="Intro">
+      <h1 className="Intro__headline">
+        {headline}
+        <span style={{ backgroundImage: `url(${background})` }}>
+          {appNameWithImage}
+        </span>
+      </h1>
+      <figure className="Intro__image">
+        <img alt="intro app" src={introImage}></img>
+      </figure>
+      <h2 className="Intro__subheadline">{subHeadline}</h2>
+      {paragraphs.map((paragraph) => (
+        <p className="Intro__paragraph">{paragraph}</p>
+      ))}
+      <Link to="/question1">
+        <button className="Intro__button">{cta}</button>
+      </Link>
+    </section>
+  );
+};
+
+export default Intro;
