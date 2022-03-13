@@ -14,7 +14,7 @@ const Question1 = () => {
 
   const { labels, cta } = copyText.question1;
 
-  function SubmitButton() {
+  const SubmitButton = () => {
     return (
       <button
         type="button"

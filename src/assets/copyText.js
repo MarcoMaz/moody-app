@@ -16,6 +16,16 @@ const copyText = {
 			"Just type your name."
 		],
 		cta: "Go on!"
+	},
+	"question2": {
+		headline: "Usually, where do you listen to music ?",
+		radioItems: [
+			"In my car",
+			"While I do jogging",
+			"In my bathtub",
+			"Somewhere else..."
+		],
+		cta: "Almost there..."
 	}
 }
 
