@@ -26,6 +26,17 @@ const copyText = {
 			"Somewhere else..."
 		],
 		cta: "Almost there..."
+	},
+	"question3": {
+		headline: "How's your mood today ?",
+		radioItems: [
+			"Very bad",
+			"Bad",
+			"Normal",
+			"Good",
+			"Very good!"
+		],
+		cta: "Go!"
 	}
 }
 
