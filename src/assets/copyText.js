@@ -9,6 +9,13 @@ const copyText = {
 			"It's THAT easy."
 		],
 		cta: "Let's start!"
+	},
+	"question1": {
+		labels: [
+			"That's an easy one.",
+			"Just type your name."
+		],
+		cta: "Go on!"
 	}
 }
 
