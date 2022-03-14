@@ -37,6 +37,18 @@ const copyText = {
 			"Very good!"
 		],
 		cta: "Go!"
+	},
+	"elaborating": {
+		headline: "Your playlist is ready, ",
+		cta: "Show me the result",
+		sentences: [
+			"I'm elaborating the results",
+			"Patience is a virtue.",
+			"One moment more..",
+			"In few seconds your playlist will be ready.",
+			"Mm. You have an interesting taste.",
+			"Music is the best."
+		]
 	}
 }
 
