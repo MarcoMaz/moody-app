@@ -11,8 +11,11 @@ import "./Question.scss";
 
 const Question1 = () => {
   const { username, setUsername } = useContext(Moodify);
+  const { id, labels, cta, progress, placeHolder } = copyText.question1;
 
-  const { labels, cta } = copyText.question1;
+	const handleChange = (e) => {
+		return setUsername(e.target.value)
+	}
 
   const SubmitButton = () => {
     return (
@@ -34,21 +37,21 @@ const Question1 = () => {
             <FontAwesomeIcon icon="chevron-left" />
           </button>
         </Link>
-        <span className="Question__progress__numbers">1 / 3</span>
+        <span className="Question__progress__numbers">{progress}</span>
       </div>
       <div className="Question__label">
-        <label htmlFor="question1">
-          {labels.map((label) => (
-            <p>{label}</p>
+        <label htmlFor={id}>
+          {labels.map((label, index) => (
+            <p key={index}>{label}</p>
           ))}
         </label>
         <input
           value={username}
           type="text"
-          id="question1"
-          name="question1"
-          placeholder="Your name here"
-          onChange={(e) => setUsername(e.target.value)}
+          id={id}
+          name={id}
+          placeholder={placeHolder}
+					onChange={handleChange}
           required
         />
       </div>
@@ -56,7 +59,7 @@ const Question1 = () => {
         <SubmitButton />
       </Link>
       <figure className="Question__image">
-        <img alt="question 1" src={question1Image}></img>
+        <img alt={id} src={question1Image}></img>
       </figure>
     </section>
   );

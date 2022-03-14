@@ -1,29 +1,29 @@
-import { useState } from "react";
+import { useState } from 'react'
 
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import question3Image from "../../assets/image-question-03.png";
-import copyText from "../../assets/copyText";
+import question3Image from '../../assets/image-question-03.png'
+import copyText from '../../assets/copyText'
 
-import "./Question.scss";
+import './Question.scss'
 
 const Question3 = () => {
-  const [checked, setChecked] = useState(false);
-  const handleClick = () => setChecked(true);
-  const { headline, radioItems, cta } = copyText.question3;
+  const [checked, setChecked] = useState(false)
+  const handleChange = () => setChecked(true)
+  const { headline, id, radioItems, cta, progress } = copyText.question3
 
   const SubmitButton = () => {
     return (
       <button
         type="button"
-        className={`Question__button${checked ? "" : " -disabled"}`}
-        disabled={checked === "" ? true : false}
+        className={`Question__button${checked ? '' : ' -disabled'}`}
+        disabled={checked === '' ? true : false}
       >
         {cta}
       </button>
-    );
-  };
+    )
+  }
 
   return (
     <section className="Question Question-3">
@@ -33,7 +33,7 @@ const Question3 = () => {
             <FontAwesomeIcon icon="chevron-left" />
           </button>
         </Link>
-        <span className="Question__progress__numbers">3 / 3</span>
+        <span className="Question__progress__numbers">{progress}</span>
       </div>
       <div className="Question__radio">
         <p>{headline}</p>
@@ -43,23 +43,23 @@ const Question3 = () => {
               <input
                 type="radio"
                 id={`id-${index}`}
-                name={`name-${index}`}
+                name={id}
                 value={`value-${index}`}
-                onChange={handleClick}
+                onChange={handleChange}
               />
               <label htmlFor={`id-${index}`}>{radioItem}</label>
             </div>
-          );
+          )
         })}
       </div>
       <Link to="/elaborating">
         <SubmitButton />
       </Link>
       <figure className="Question__image">
-        <img alt="this is the third question" src={question3Image}></img>
+        <img alt={id} src={question3Image}></img>
       </figure>
     </section>
-  );
-};
+  )
+}
 
-export default Question3;
+export default Question3

@@ -1,8 +1,9 @@
 const copyText = {
 	"intro": {
 		headline: "Welcome to",
-		appName: "Moody",
 		subHeadline: "Shape a playlist around your mood",
+		appName: "Moody",
+		imageAlt: "intro",
 		paragraphs: [
 			"YOU answer 3 questions.",
 			"WE shape the perfect playlist.",		
@@ -11,24 +12,30 @@ const copyText = {
 		cta: "Let's start!"
 	},
 	"question1": {
+		id: "question1",
 		labels: [
 			"That's an easy one.",
 			"Just type your name."
 		],
-		cta: "Go on!"
+		placeHolder: "Type your name here",
+		cta: "Go on!",
+		progress: "1 / 3"
 	},
 	"question2": {
 		headline: "Usually, where do you listen to music ?",
+		id: "question2",
 		radioItems: [
 			"In my car",
 			"While I do jogging",
 			"In my bathtub",
 			"Somewhere else..."
 		],
-		cta: "Almost there..."
+		cta: "Almost there...",
+		progress: "2 / 3"
 	},
 	"question3": {
 		headline: "How's your mood today ?",
+		id: "question3",
 		radioItems: [
 			"Very bad",
 			"Bad",
@@ -36,7 +43,8 @@ const copyText = {
 			"Good",
 			"Very good!"
 		],
-		cta: "Go!"
+		cta: "Go!",
+		progress: "3 / 3"
 	},
 	"elaborating": {
 		headline: "Your playlist is ready, ",

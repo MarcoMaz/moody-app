@@ -7,7 +7,7 @@ import introImage from '../../assets/image-intro.png';
 import './Intro.scss';
 
 const Intro = () => {
-	const { headline, appName, subHeadline, paragraphs, cta } = copyText.intro;
+	const { headline, imageAlt, appName, subHeadline, paragraphs, cta } = copyText.intro;
 	// Cut the first letter and use a background image instead
 	const appNameWithImage = appName.slice(1);
 
@@ -20,7 +20,7 @@ const Intro = () => {
 				</span>
 			</h1>
 			<figure className="Intro__image">
-				<img alt="intro" src={introImage}></img>
+				<img alt={imageAlt} src={introImage}></img>
 			</figure>
 			<h2 className="Intro__subheadline">{subHeadline}</h2>
 			{paragraphs.map((paragraph, index) => (
