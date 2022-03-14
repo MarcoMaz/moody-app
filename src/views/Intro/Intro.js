@@ -8,6 +8,7 @@ import './Intro.scss';
 
 const Intro = () => {
 	const { headline, appName, subHeadline, paragraphs, cta } = copyText.intro;
+	// Cut the first letter and use a background image instead
 	const appNameWithImage = appName.slice(1);
 
 	return (
