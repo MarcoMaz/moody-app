@@ -49,6 +49,12 @@ const copyText = {
 			"Mm. You have an interesting taste.",
 			"Music is the best."
 		]
+	},
+	"results": {
+		headline: "This is your personalized playlist.",
+		subHeadline: "Click a song and have fun!",
+		changeSong: "Change song",
+		startOver: "Start over"
 	}
 }
 
