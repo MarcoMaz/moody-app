@@ -15,7 +15,7 @@ const Elaborating = () => {
   const THREE_SECONDS = 3000
   const NINE_SECONDS = 9000
 
-  const { headline, cta, sentences } = copyText.elaborating
+  const { headline, imageAlt, cta, sentences } = copyText.elaborating
 
   useEffect(() => {
     const timerElaborating = setTimeout(() => {
@@ -52,7 +52,7 @@ const Elaborating = () => {
             {headline} <span>{username}</span>.
           </h2>
           <figure className="Elaborating__image">
-            <img alt="elaborating" src={elaboratingImage}></img>
+            <img alt={imageAlt} src={elaboratingImage}></img>
           </figure>
         </>
       )}

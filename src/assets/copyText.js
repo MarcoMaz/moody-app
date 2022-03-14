@@ -49,6 +49,7 @@ const copyText = {
 	"elaborating": {
 		headline: "Your playlist is ready, ",
 		cta: "Show me the result",
+		imageAlt: "elaborating",
 		sentences: [
 			"I'm elaborating the results",
 			"Patience is a virtue.",
@@ -62,7 +63,9 @@ const copyText = {
 		headline: "This is your personalized playlist.",
 		subHeadline: "Click a song and have fun!",
 		changeSong: "Change song",
-		startOver: "Start over"
+		startOver: "Start over",
+		imageAlt: "result cover",
+		imageModalAlt: "cover of the song"
 	}
 }
 
