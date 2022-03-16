@@ -53,9 +53,9 @@ const Results = () => {
     return dataSortable.sort((a, b) => a.sortKey - b.sortKey).slice(0, 6)
   }, [])
 
-  let audio = useRef()
+  let audio = useRef<HTMLAudioElement>(null!);
 
-  const start = (selectedSong) => {
+  const start = () => {
     audio.current = new Audio(activeChoice.songChoice)
     audio.current.play()
     setIsPlaying(true)
