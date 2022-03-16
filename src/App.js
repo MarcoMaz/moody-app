@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import { useState, createContext } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Intro from './views/Intro/Intro'

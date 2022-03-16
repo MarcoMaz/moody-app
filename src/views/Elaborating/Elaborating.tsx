@@ -7,15 +7,29 @@ import copyText from '../../assets/copyText.js'
 
 import './Elaborating.scss'
 
-const Elaborating = () => {
+interface ElaboratingProps {
+  headline: string
+  imageAlt: string
+  cta: string
+  sentences: string[]
+}
+
+const Elaborating: React.FunctionComponent = () => {
   const { username } = useContext(Moodify)
-  const [isElaboratingVisible, setIsElaboratingVisible] = useState(false)
-  const [newHeadline, setNewHeadline] = useState('')
+  const [isElaboratingVisible, setIsElaboratingVisible] = useState<boolean>(
+    false,
+  )
+  const [newHeadline, setNewHeadline] = useState<string>('')
 
-  const THREE_SECONDS = 3000
-  const NINE_SECONDS = 9000
+  const THREE_SECONDS: number = 3000
+  const NINE_SECONDS: number = 9000
 
-  const { headline, imageAlt, cta, sentences } = copyText.elaborating
+  const {
+    headline,
+    imageAlt,
+    cta,
+    sentences,
+  }: ElaboratingProps = copyText.elaborating
 
   useEffect(() => {
     const timerElaborating = setTimeout(() => {
@@ -43,7 +57,7 @@ const Elaborating = () => {
       {!isElaboratingVisible && (
         <>
           <h2 className="Elaborating__headline">{newHeadline}</h2>
-          <div className="Elaborating__spinner"></div>
+          <div className="Elaborating__spinner" />
         </>
       )}
       {isElaboratingVisible && (
@@ -52,7 +66,7 @@ const Elaborating = () => {
             {headline} <span>{username}</span>.
           </h2>
           <figure className="Elaborating__image">
-            <img alt={imageAlt} src={elaboratingImage}></img>
+            <img alt={imageAlt} src={elaboratingImage} />
           </figure>
         </>
       )}

@@ -8,17 +8,31 @@ import copyText from '../../assets/copyText'
 
 import './Question.scss'
 
-const Question3 = () => {
-  const [checked, setChecked] = useState(false)
-  const handleChange = () => setChecked(true)
-  const { headline, id, radioItems, cta, progress } = copyText.question3
+interface Question3Props {
+  headline: string
+  id: string
+  radioItems: string[]
+  cta: string
+  progress: string
+}
+
+const Question3: React.FunctionComponent = () => {
+  const [checked, setChecked] = useState<boolean>(false)
+  const handleChange: () => void = () => setChecked(true)
+  const {
+    headline,
+    id,
+    radioItems,
+    cta,
+    progress,
+  }: Question3Props = copyText.question3
 
   const SubmitButton = () => {
     return (
       <button
         type="button"
         className={`Question__button${checked ? '' : ' -disabled'}`}
-        disabled={checked === '' ? true : false}
+        disabled={checked === false ? true : false}
       >
         {cta}
       </button>
@@ -56,7 +70,7 @@ const Question3 = () => {
         <SubmitButton />
       </Link>
       <figure className="Question__image">
-        <img alt={id} src={question3Image}></img>
+        <img alt={id} src={question3Image} />
       </figure>
     </section>
   )

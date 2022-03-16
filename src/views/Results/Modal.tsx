@@ -1,4 +1,4 @@
-const Modal = () => {
+const Modal: React.FunctionComponent = () => {
 	return(
 		<div className="Modal"/>
 	)

@@ -1,24 +1,38 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import question2Image from '../../assets/image-question-02.png';
-import copyText from '../../assets/copyText';
+import question2Image from '../../assets/image-question-02.png'
+import copyText from '../../assets/copyText'
 
-import './Question.scss';
+import './Question.scss'
 
-const Question2 = () => {
-  const [checked, setChecked] = useState(false)
-  const handleChange = () => setChecked(true)
-  const { headline, id, radioItems, cta, progress } = copyText.question2
+interface Question2Props {
+  headline: string
+  id: string
+  radioItems: string[]
+  cta: string
+  progress: string
+}
+
+const Question2: React.FunctionComponent = () => {
+  const [checked, setChecked] = useState<boolean>(false)
+  const handleChange: () => void = () => setChecked(true)
+  const {
+    headline,
+    id,
+    radioItems,
+    cta,
+    progress,
+  }: Question2Props = copyText.question2
 
   const SubmitButton = () => {
     return (
       <button
         type="button"
         className={`Question__button${checked ? '' : ' -disabled'}`}
-        disabled={checked === '' ? true : false}
+        disabled={checked === false ? true : false}
       >
         {cta}
       </button>
@@ -56,7 +70,7 @@ const Question2 = () => {
         <SubmitButton />
       </Link>
       <figure className="Question__image">
-        <img alt={id} src={question2Image}></img>
+        <img alt={id} src={question2Image}/>
       </figure>
     </section>
   )

@@ -1,32 +1,46 @@
-import { useContext } from "react";
-import { Moodify } from "../../App";
+import { useContext } from 'react'
+import { Moodify } from '../../App'
 
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import question1Image from "../../assets/image-question-01.png";
-import copyText from "../../assets/copyText";
+import question1Image from '../../assets/image-question-01.png'
+import copyText from '../../assets/copyText'
 
-import "./Question.scss";
+import './Question.scss'
 
-const Question1 = () => {
-  const { username, setUsername } = useContext(Moodify);
-  const { id, labels, cta, progress, placeHolder } = copyText.question1;
+interface Question1Props {
+  id: string
+  labels: string[]
+  cta: string
+  progress: string
+  placeHolder: string
+}
 
-	const handleChange = (e) => {
-		return setUsername(e.target.value)
-	}
+const Question1: React.FunctionComponent = () => {
+  const { username, setUsername } = useContext(Moodify)
+  const {
+    id,
+    labels,
+    cta,
+    progress,
+    placeHolder,
+  }: Question1Props = copyText.question1
+
+  const handleChange = (e: { target: { value: any } }) => {
+    return setUsername(e.target.value)
+  }
 
   const SubmitButton = () => {
     return (
       <button
         type="button"
-        className={`Question__button${username ? "" : " -disabled"}`}
-        disabled={username === "" ? true : false}
+        className={`Question__button${username ? '' : ' -disabled'}`}
+        disabled={username === '' ? true : false}
       >
         {cta}
       </button>
-    );
+    )
   }
 
   return (
@@ -51,7 +65,7 @@ const Question1 = () => {
           id={id}
           name={id}
           placeholder={placeHolder}
-					onChange={handleChange}
+          onChange={handleChange}
           required
         />
       </div>
@@ -62,7 +76,7 @@ const Question1 = () => {
         <img alt={id} src={question1Image}></img>
       </figure>
     </section>
-  );
-};
+  )
+}
 
-export default Question1;
+export default Question1
