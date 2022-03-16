@@ -11,6 +11,13 @@ import fakeData from '../fakeData'
 
 import './Results.scss'
 
+interface musicProps {
+	sortKey: number;
+	title: string;
+	artist: string;
+	imageUrl: string;
+}
+
 const Results = () => {
   const { setUsername } = useContext(Moodify)
 
@@ -74,7 +81,7 @@ const Results = () => {
     setIsPlaying(false)
   }
 
-  const handleClick = (music) => {
+  const handleClick = (music: musicProps) => {
     setActiveChoice({
       imageUrlChoice: music.imageUrl,
       titleChoice: music.title,
