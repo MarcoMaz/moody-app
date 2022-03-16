@@ -12,10 +12,26 @@ import fakeData from '../fakeData'
 import './Results.scss'
 
 interface musicProps {
-	sortKey: number;
-	title: string;
-	artist: string;
-	imageUrl: string;
+  sortKey: number
+  title: string
+  artist: string
+  imageUrl: string
+}
+
+interface musicChoiceProps {
+  imageUrlChoice: string
+  titleChoice: string
+  artistChoice: string
+  songChoice: string
+}
+
+interface resultsProps {
+  headline: string
+  subHeadline: string
+  changeSong: string
+  startOver: string
+  imageAlt: string
+  imageModalAlt: string
 }
 
 const Results = () => {
@@ -26,10 +42,10 @@ const Results = () => {
     titleChoice: '',
     artistChoice: '',
     songChoice: '',
-  })
+  } as musicChoiceProps)
 
-  const [visibleAlbum, setVisibleAlbum] = useState(false)
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [visibleAlbum, setVisibleAlbum] = useState<boolean>(false)
+  const [isPlaying, setIsPlaying] = useState<boolean>(false)
 
   const {
     headline,
@@ -38,17 +54,11 @@ const Results = () => {
     startOver,
     imageAlt,
     imageModalAlt,
-  } = copyText.results
+  }: resultsProps = copyText.results
 
   const newPlaylist = useMemo(() => {
     let chosePlaylist = fakeData
 
-    // Add a random key
-    let randomSortKey = {}
-
-    chosePlaylist.forEach((d) => (randomSortKey[d] = Math.random()))
-
-    //add the sortKey property to the individual array entries
     let dataSortable = chosePlaylist.map((playlist) => {
       return {
         ...playlist,
@@ -60,22 +70,20 @@ const Results = () => {
     return dataSortable.sort((a, b) => a.sortKey - b.sortKey).slice(0, 6)
   }, [])
 
-  let audio = useRef<HTMLAudioElement>(null!);
+  let audio = useRef<HTMLAudioElement>(null!)
 
-  const start = () => {
+  const start: () => void = () => {
     audio.current = new Audio(activeChoice.songChoice)
     audio.current.play()
     setIsPlaying(true)
   }
 
-  const stop = () => {
-    if (audio.current !== undefined) {
-      audio.current.pause()
-    }
+  const stop: () => void = () => {
+    audio.current.pause()
     setIsPlaying(false)
   }
 
-  const clickChangeSong = () => {
+  const clickChangeSong: () => void = () => {
     setVisibleAlbum(false)
     stop()
     setIsPlaying(false)
@@ -91,7 +99,7 @@ const Results = () => {
     setVisibleAlbum(true)
   }
 
-  const clickReset = () => {
+  const clickReset: () => void = () => {
     setUsername('')
   }
 
