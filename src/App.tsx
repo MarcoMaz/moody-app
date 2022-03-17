@@ -14,7 +14,12 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft, faPlay, faStop } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
 
-export const Moodify = createContext()
+interface MoodifyProps {
+	username: string;
+	setUsername: React.Dispatch<React.SetStateAction<string>>
+}
+
+export const Moodify = createContext<MoodifyProps>(null!)
 
 library.add(fab, faPlay, faStop, faChevronLeft)
 
