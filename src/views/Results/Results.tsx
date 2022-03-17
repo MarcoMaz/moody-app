@@ -117,8 +117,8 @@ const Results = () => {
     <>
       {visibleAlbum && <Modal />}
       <section className="Results">
-        <h2 className="Results__headline">{headline}</h2>
-        <h3 className="Results__subheadline">{subHeadline}</h3>
+        <h1 className="Results__headline">{headline}</h1>
+        <h2 className="Results__subheadline">{subHeadline}</h2>
         <ul className="Results__songs">
           {newPlaylist.map((music, index) => (
             <li
@@ -136,12 +136,11 @@ const Results = () => {
         </ul>
         {visibleAlbum && (
           <div className="Song">
-            <h2 className="Song__title">{activeChoice.titleChoice}</h2>
-            <h3 className="Song__artist">{activeChoice.artistChoice}</h3>
+            <h1 className="Song__title">{activeChoice.titleChoice}</h1>
+            <h2 className="Song__artist">{activeChoice.artistChoice}</h2>
             <figure className="Song__image">
               <img src={activeChoice.imageUrlChoice} alt={imageModalAlt} />
             </figure>
-            <div className="Song__slider" />
             <div className="Song__buttons">
               {!isPlaying ? (
                 <button className="Song__play" onClick={start}>

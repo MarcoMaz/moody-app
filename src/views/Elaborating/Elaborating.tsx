@@ -56,15 +56,15 @@ const Elaborating: React.FunctionComponent = () => {
     <section className="Elaborating">
       {!isElaboratingVisible && (
         <>
-          <h2 className="Elaborating__headline">{newHeadline}</h2>
+          <h1 className="Elaborating__headline">{newHeadline}</h1>
           <div className="Elaborating__spinner" />
         </>
       )}
       {isElaboratingVisible && (
         <>
-          <h2 className="Elaborating__headline">
+          <h1 className="Elaborating__headline">
             {headline} <span>{username}</span>.
-          </h2>
+          </h1>
           <figure className="Elaborating__image">
             <img alt={imageAlt} src={elaboratingImage} />
           </figure>
