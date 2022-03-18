@@ -7,8 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import question1Image from '../../assets/image-question-01.png'
 import copyText from '../../assets/copyText'
 
-import './Question.scss'
-
 interface Question1Props {
   id: string
   labels: string[]

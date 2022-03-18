@@ -4,8 +4,6 @@ import background from '../../assets/moody-logo.png'
 import copyText from '../../assets/copyText'
 import introImage from '../../assets/image-intro.png'
 
-import './Intro.scss'
-
 interface IntroProps {
   headline: string
   imageAlt: string

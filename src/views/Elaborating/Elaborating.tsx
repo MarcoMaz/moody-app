@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 import elaboratingImage from '../../assets/image-elaborating-02.png'
 import copyText from '../../assets/copyText.js'
 
-import './Elaborating.scss'
-
 interface ElaboratingProps {
   headline: string
   imageAlt: string

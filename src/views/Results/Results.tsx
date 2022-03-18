@@ -9,8 +9,6 @@ import copyText from '../../assets/copyText'
 import Modal from './Modal'
 import fakeData from '../fakeData'
 
-import './Results.scss'
-
 interface musicProps {
   sortKey: number
   title: string

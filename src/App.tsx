@@ -12,7 +12,8 @@ import Results from './views/Results/Results'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft, faPlay, faStop } from '@fortawesome/free-solid-svg-icons'
-import './App.scss';
+
+import "./styles/main.scss"
 
 interface MoodifyProps {
 	username: string;
