@@ -19,7 +19,17 @@ h3, div, p, input {
 	font-size: 1rem;
 }
 
+h1, h2, h3 {
+	span {
+		text-transform: capitalize;
+	}
+}
+
 h1, h2, h3, p, a, button {
 	margin: 0;
 	text-align: center;
+}
+
+ul {
+	list-style: none;
 }

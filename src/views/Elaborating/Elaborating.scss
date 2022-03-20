@@ -1,21 +1,16 @@
-.Elaborating__headline span {
-	text-transform: capitalize;
-}
+.Elaborating {
 
-.Elaborating__spinner {
-  display: inline-block;
-  width: 5rem;
-  height: 5rem;
+	@include phone-grid;
 
-	&::after {
-		content: " ";
-		display: block;
-		width: 4rem;
-		height: 4rem;
-		border-radius: 50%;
+	&__spinner::after {
+		animation: spinner 3s linear infinite;
 		border: 0.5rem solid $mirage;
 		border-color: $mirage transparent;
-		animation: spinner 3s linear infinite;
+		border-radius: 50%;
+		content: " ";
+		display: block;
+		height: 4rem;
+		width: 4rem;
 	}
 }
 

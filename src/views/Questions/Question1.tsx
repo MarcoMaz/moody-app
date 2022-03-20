@@ -2,7 +2,6 @@ import { useContext } from 'react'
 import { Moodify } from '../../App'
 
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import question1Image from '../../assets/image-question-01.png'
 import copyText from '../../assets/copyText'
@@ -44,11 +43,6 @@ const Question1: React.FunctionComponent = () => {
   return (
     <section className="Question Question-1">
       <div className="Question__progress">
-        <Link to="/question1">
-          <button className="Question__progress__back">
-            <FontAwesomeIcon icon="chevron-left" />
-          </button>
-        </Link>
         <span className="Question__progress__numbers">{progress}</span>
       </div>
       <div className="Question__label">

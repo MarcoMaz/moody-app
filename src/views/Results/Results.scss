@@ -11,51 +11,13 @@
 }
 
 .Results {
-	height: auto;
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	
-	&__songs {
-		display: flex;
-		list-style: none;
-		flex-wrap: wrap;
 
-		.Results__song {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-			width: 50%;
-
-			figure img {
-				border-radius: 0.5rem;
-			}
-		}
-	}
+	@include phone-grid;
 }
 
 .Song {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	z-index: 9999;
-	position: fixed;
-	background: white;
-	justify-content: space-evenly;
+	background: $white;
 	border-radius: 0.5rem;
-
-	&__image img {
-		border-radius: 0.5rem;
-		height: 25vh;
-	}
-
-	&__buttons {
-		display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-		.Song__play,
-		.Song__stop {
-			width: 50%;
-		}
-	}
+	position: fixed;
+	z-index: 9999;
 }

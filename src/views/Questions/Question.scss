@@ -1,40 +1,25 @@
 .Question {
 
-	&__progress {
-		align-items: center;
-    display: flex;
-		height: 1.5rem;
-    justify-content: space-between;
-		width: 100%;
+	@include phone-grid;
 
-		&__back {
-			color: $mirage;
-			background: transparent;
-			padding: unset;
-		}
-	}
-
-	&__label {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
+	// Styling for both type of questions
+	&__progress__back {
+		background: transparent;
+		color: $mirage;
+		padding: unset;
 	}
 
 	&__button.-disabled {
 		background-color: lighten($mirage, 60%);
 	}
 
-	&__radio {
-		display: flex;
-		flex-direction: column;
+	// Styling for Question #1
+	&__label {
+		text-align: center;
+	}
 
-		&-item {
-			display: inline-block;
-			position: relative;	
-		}	
+	// Styling for Questions #2 and #3
+	&__radio-item {
+		position: relative;	
 	}	
-}
-
-.Question-1 .Question__progress a {
-	visibility: hidden;
 }
