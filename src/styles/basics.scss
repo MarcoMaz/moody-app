@@ -39,6 +39,47 @@ button {
 	padding: 0.5rem 1rem;
 }
 
+input {
+
+	&[type=text]{
+		border-radius: 0.5rem;
+		padding: 1rem;	
+	}
+
+	&[type=radio]{
+		display: none;
+
+		+ label {
+			padding-left: 0.5rem;
+		}
+
+		+ label:before {
+			background-color: transparent;
+			border: 0.25rem solid $congress-blue;
+			border-radius: 50%;
+			content: " ";
+			display: inline-block;
+			height: 1rem;
+			left: -0.5rem;
+			position: relative;
+			top: 0.5rem;
+			width: 1rem;
+		}
+
+		&:checked + label:after {
+			background: $congress-blue;
+			border-radius: 50%;
+			content: " ";
+			display: block;
+			height: 0.75rem;
+			left: calc(0.75rem / 2);
+			position: absolute;
+			top: calc(1.75rem / 2);
+			width: 0.75rem;
+		}
+	}
+}
+
 img {
 	max-width:100%;
 	max-height:100%;

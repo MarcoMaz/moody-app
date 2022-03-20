@@ -1,32 +1,22 @@
-.Elaborating__headline {
-	margin-bottom: 5rem;
-
-	span {
-		text-transform: capitalize;
-	}
+.Elaborating__headline span {
+	text-transform: capitalize;
 }
 
 .Elaborating__spinner {
   display: inline-block;
   width: 5rem;
   height: 5rem;
-	margin: 2.5rem 0;
 
 	&::after {
 		content: " ";
 		display: block;
 		width: 4rem;
 		height: 4rem;
-		margin: 0.5rem;
 		border-radius: 50%;
 		border: 0.5rem solid $mirage;
 		border-color: $mirage transparent;
 		animation: spinner 3s linear infinite;
 	}
-}
-
-.Elaborating__image {
-	margin-bottom: 3rem;
 }
 
 @keyframes spinner {
