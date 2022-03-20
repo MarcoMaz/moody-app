@@ -15,4 +15,41 @@ $vertical-spacing: (
 	hyper: 6rem
 );
 
-// Horizontal Margins
+// Horizontal Spacing
+@mixin base-grid {
+	display: grid;
+	gap: 2rem;
+}
+
+@mixin phone-grid {
+
+	@include base-grid;
+
+	grid-template-columns: repeat(4, 1fr);
+
+	> * {
+		grid-column: span 4;
+	}
+}
+
+@mixin tablet-grid {
+
+	@include base-grid;
+
+	grid-template-columns: repeat(12, 1fr);
+
+	> * {
+		grid-column: span 12;
+	}
+}
+
+@mixin desktop-grid {
+
+	@include base-grid;
+
+	grid-template-columns: repeat(12, 1fr);
+
+	> * {
+		grid-column: span 12;
+	}
+}
