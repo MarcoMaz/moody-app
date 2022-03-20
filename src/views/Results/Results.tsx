@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import fakeSong from '../../assets/africa.mp3'
 import copyText from '../../assets/copyText'
 
-import Modal from './Modal'
+import Modal from '../Modal/Modal'
 import fakeData from '../fakeData'
 
 interface musicProps {
