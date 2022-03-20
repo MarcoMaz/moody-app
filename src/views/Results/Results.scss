@@ -14,11 +14,6 @@
 	height: auto;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
-
-	&__headline,
-	&__subheadline {
-		margin-bottom: 1rem;
-	}
 	
 	&__songs {
 		display: flex;
@@ -29,9 +24,7 @@
 			align-items: center;
 			display: flex;
 			flex-direction: column;
-			margin-bottom: 1rem;
 			width: 50%;
-			padding: 0 1rem;
 
 			figure img {
 				border-radius: 0.5rem;
@@ -49,20 +42,10 @@
 	background: white;
 	justify-content: space-evenly;
 	border-radius: 0.5rem;
-	padding: 1.5rem;
-
-	.Song__title {
-		padding-top: 0.5rem;
-	}
-
-	.Song__artist {
-		margin-bottom: 0.5rem;
-	}
 
 	&__image img {
 		border-radius: 0.5rem;
 		height: 25vh;
-		margin-bottom: 1rem;
 	}
 
 	&__buttons {
@@ -73,10 +56,6 @@
 		.Song__play,
 		.Song__stop {
 			width: 50%;
-		}
-
-		.Song__change {
-			margin: 1rem 0;
 		}
 	}
 }

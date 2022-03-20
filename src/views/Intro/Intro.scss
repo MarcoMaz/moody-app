@@ -1,23 +1,7 @@
 .Intro {
-	padding: 15vw;
-
-	&__headline,
-	&__subheadline,
-	&__image,
-	&__paragraph {
-		margin-bottom: 0.5rem;
-	}
 
 	&__headline span {
 		background-size: 2rem;
 		background-repeat: no-repeat;
-	}
-
-	&__subheadline {
-		margin-bottom: 1rem;
-	}
-
-	button {
-		margin: 0.5rem 0;
 	}
 }
