@@ -1,9 +1,10 @@
 .Intro {
 
-	@include phone-grid;
-
 	&__headline span {
 		background-size: 2rem;
+    background-position-x: 0.25rem;
+    background-position-y: 0.5rem;
 		background-repeat: no-repeat;
+		padding: 0 2rem;
 	}
 }

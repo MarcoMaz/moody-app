@@ -1,7 +1,5 @@
 .Elaborating {
 
-	@include phone-grid;
-
 	&__spinner::after {
 		animation: spinner 3s linear infinite;
 		border: 0.5rem solid $mirage;
