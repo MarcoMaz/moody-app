@@ -1,6 +1,6 @@
 .Modal {
   background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(0.5rem);
   height: 100%;
   position: fixed;
 	top: 0;
@@ -17,7 +17,7 @@
 
 	&__headline,
 	&__subheadline {
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
 	}
 	
 	&__songs {
@@ -29,18 +29,14 @@
 			align-items: center;
 			display: flex;
 			flex-direction: column;
-			margin-bottom: 20px;
+			margin-bottom: 1rem;
 			width: 50%;
-			padding: 0 20px;
+			padding: 0 1rem;
 			text-align: center;
-
-			&-image {
-				height: 130px;
-			}
 
 			&-title,
 			&-artist {
-				font-size: 12px;
+				font-size: 0.5rem;
 			}
 
 			&-title {
@@ -52,9 +48,7 @@
 			}
 
 			figure img {
-				border-radius: 6px;
-				height: 120px;
-				width: 120px;
+				border-radius: 0.5rem;
 			}
 		}
 	}
@@ -67,30 +61,28 @@
 	z-index: 9999;
 	position: fixed;
 	background: white;
-	height: 400px;
-	top: calc(50% - 200px);
 	justify-content: space-evenly;
-	border-radius: 6px;
-	padding: 30px;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
 
 	.Song__title,
 	.Song__artist {
-		font-size: 20px;
+		font-size: 1rem;
 	}
 
 	.Song__title {
-		padding-top: 10px;
+		padding-top: 0.5rem;
 	}
 
 	.Song__artist {
 		font-weight: normal;
-		margin-bottom: 10px;
+		margin-bottom: 0.5rem;
 	}
 
 	&__image img {
-		border-radius: 6px;
+		border-radius: 0.5rem;
 		height: 25vh;
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
 	}
 
 	&__buttons {
@@ -104,7 +96,7 @@
 		}
 
 		.Song__change {
-			margin: 20px 0;
+			margin: 1rem 0;
 		}
 	}
 }

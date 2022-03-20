@@ -1,5 +1,5 @@
 .Elaborating__headline {
-	margin-bottom: 80px;
+	margin-bottom: 5rem;
 
 	span {
 		text-transform: capitalize;
@@ -8,25 +8,25 @@
 
 .Elaborating__spinner {
   display: inline-block;
-  width: 80px;
-  height: 80px;
-	margin: 40px 0;
+  width: 5rem;
+  height: 5rem;
+	margin: 2.5rem 0;
 
 	&::after {
 		content: " ";
 		display: block;
-		width: 64px;
-		height: 64px;
-		margin: 8px;
+		width: 4rem;
+		height: 4rem;
+		margin: 0.5rem;
 		border-radius: 50%;
-		border: 4px solid $mirage;
+		border: 0.5rem solid $mirage;
 		border-color: $mirage transparent;
 		animation: spinner 3s linear infinite;
 	}
 }
 
 .Elaborating__image {
-	margin-bottom: 50px;
+	margin-bottom: 3rem;
 }
 
 @keyframes spinner {

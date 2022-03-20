@@ -5,26 +5,25 @@
 	&__subheadline,
 	&__image,
 	&__paragraph {
-		margin-bottom: 10px;
+		margin-bottom: 0.5rem;
 		text-align: center;
 	}
 
 	&__headline {
-		font-size: 20px;
+		font-size: 1rem;
 
 		span {
-			background-size: 38px;
+			background-size: 2rem;
 			background-repeat: no-repeat;
-			padding: 3px 0 9px 31px;
 		}
 	}
 
 	&__subheadline {
-		font-size: 18px;
-		margin-bottom: 20px;
+		font-size: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	button {
-		margin: 10px 0;
+		margin: 0.5rem 0;
 	}
 }

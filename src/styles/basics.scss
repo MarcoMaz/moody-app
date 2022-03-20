@@ -49,9 +49,9 @@ button {
 	background-color: $mirage;
 	color: $gallery;
 	border: 0;
-	border-radius: 6px;
+	border-radius: 0.5rem;
 	font-family: 'Poppins', sans-serif;
-	padding: 10px 20px;
+	padding: 0.5rem 1rem;
 }
 
 img {
@@ -60,23 +60,19 @@ img {
 }
 
 h1 {
-	font-size: 28px;
+	font-size: 2rem;
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 1.5rem;
 }
 
-h3 {
-	font-size: 20px;
+h3, div, p, input {
+	font-size: 1rem;
 }
 
 h1, h2, h3 {
 	text-align: center;
-}
-
-div, p, input {
-	font-size: 16px;
 }
 
 .App {
