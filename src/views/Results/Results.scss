@@ -32,20 +32,6 @@
 			margin-bottom: 1rem;
 			width: 50%;
 			padding: 0 1rem;
-			text-align: center;
-
-			&-title,
-			&-artist {
-				font-size: 0.5rem;
-			}
-
-			&-title {
-				font-weight: bold;
-			}
-
-			&-artist {
-				font-weight: light;
-			}
 
 			figure img {
 				border-radius: 0.5rem;
@@ -65,17 +51,11 @@
 	border-radius: 0.5rem;
 	padding: 1.5rem;
 
-	.Song__title,
-	.Song__artist {
-		font-size: 1rem;
-	}
-
 	.Song__title {
 		padding-top: 0.5rem;
 	}
 
 	.Song__artist {
-		font-weight: normal;
 		margin-bottom: 0.5rem;
 	}
 

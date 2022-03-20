@@ -6,20 +6,14 @@
 	&__image,
 	&__paragraph {
 		margin-bottom: 0.5rem;
-		text-align: center;
 	}
 
-	&__headline {
-		font-size: 1rem;
-
-		span {
-			background-size: 2rem;
-			background-repeat: no-repeat;
-		}
+	&__headline span {
+		background-size: 2rem;
+		background-repeat: no-repeat;
 	}
 
 	&__subheadline {
-		font-size: 1rem;
 		margin-bottom: 1rem;
 	}
 
