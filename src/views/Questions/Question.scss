@@ -9,7 +9,7 @@
 		width: 100%;
 
 		&__back {
-			color: #131429;
+			color: $mirage;
 			font-size: 25px;
 			background: transparent;
 			padding: unset;
@@ -36,7 +36,7 @@
 	&__button {
 
 		&.-disabled {
-			background-color: lighten(#131429, 60%);
+			background-color: lighten($mirage, 60%);
 		}
 	}
 
@@ -63,7 +63,7 @@
 				left: 12px;
 				content: " ";
 				display: block;
-				background: #004c97;
+				background: $congress-blue;
 				}
 
 			input[type='radio'] {
@@ -82,7 +82,7 @@
 					width: 20px;
 					height: 20px;
 					border-radius: 11px;
-					border: 2px solid #004c97;
+					border: 2px solid $congress-blue;
 					background-color: transparent;
 				}
 			}	
