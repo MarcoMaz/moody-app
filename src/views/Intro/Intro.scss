@@ -1,5 +1,7 @@
 .Intro {
 
+	@include phone-grid;
+
 	&__headline span {
 		background-size: 2rem;
 		background-repeat: no-repeat;
