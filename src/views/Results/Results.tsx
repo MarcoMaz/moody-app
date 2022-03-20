@@ -77,8 +77,10 @@ const Results = () => {
   }
 
   const stop: () => void = () => {
-    audio.current.pause()
-    setIsPlaying(false)
+		if (audio){
+			audio.current.pause()
+			setIsPlaying(false)
+		}
   }
 
   const clickChangeSong: () => void = () => {
