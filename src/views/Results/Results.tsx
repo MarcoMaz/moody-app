@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect, useContext, useMemo } from 'react'
 import { Moodify } from '../../App'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import fakeSong from '../../assets/africa.mp3'
 import copyText from '../../assets/copyText'
 
 import Modal from '../Modal/Modal'
+import SongChosen from '../SongChosen/SongChosen'
 import fakeData from '../fakeData'
 
 interface musicProps {
@@ -77,10 +77,10 @@ const Results = () => {
   }
 
   const stop: () => void = () => {
-		if (audio){
-			audio.current.pause()
-			setIsPlaying(false)
-		}
+    if (audio.current) {
+      audio.current.pause()
+      setIsPlaying(false)
+    }
   }
 
   const clickChangeSong: () => void = () => {
@@ -135,27 +135,17 @@ const Results = () => {
           ))}
         </ul>
         {visibleAlbum && (
-          <div className="Song">
-            <h1 className="Song__title">{activeChoice.titleChoice}</h1>
-            <h2 className="Song__artist">{activeChoice.artistChoice}</h2>
-            <figure className="Song__image">
-              <img src={activeChoice.imageUrlChoice} alt={imageModalAlt} />
-            </figure>
-            <div className="Song__buttons">
-              {!isPlaying ? (
-                <button className="Song__play" onClick={start}>
-                  <FontAwesomeIcon icon="play" />
-                </button>
-              ) : (
-                <button className="Song__stop" onClick={stop}>
-                  <FontAwesomeIcon icon="stop" />
-                </button>
-              )}
-              <button className="Song__change" onClick={clickChangeSong}>
-                {changeSong}
-              </button>
-            </div>
-          </div>
+          <SongChosen
+            titleChoice={activeChoice.titleChoice}
+            artistChoice={activeChoice.artistChoice}
+            imageUrlChoice={activeChoice.imageUrlChoice}
+            imageModalAlt={imageModalAlt}
+						songChangeLabel={changeSong}
+						isPlaying={isPlaying}
+						start={start}
+						stop={stop}
+						handleChangeSong={clickChangeSong}
+          />
         )}
         {
           <Link to="/">
