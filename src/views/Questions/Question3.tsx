@@ -1,47 +1,43 @@
-import { useState } from 'react'
+// eslint-disable-next-line no-use-before-define
+import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import question3Image from '../../assets/image-question-03.png'
-import copyText from '../../assets/copyText'
+import question3Image from '../../assets/image-question-03.png';
+import copyText from '../../assets/copyText';
 
 interface Question3Props {
-  headline: string
-  id: string
-  radioItems: string[]
-  cta: string
-  progress: string
+  headline: string;
+  id: string;
+  radioItems: string[];
+  cta: string;
+  progress: string;
 }
 
 const Question3: React.FunctionComponent = () => {
-  const [checked, setChecked] = useState<boolean>(false)
-  const handleChange: () => void = () => setChecked(true)
-  const {
-    headline,
-    id,
-    radioItems,
-    cta,
-    progress,
-  }: Question3Props = copyText.question3
+  const [checked, setChecked] = useState<boolean>(false);
+  const handleChange: () => void = () => setChecked(true);
+  const { headline, id, radioItems, cta, progress }: Question3Props =
+    copyText.question3;
 
   const SubmitButton = () => {
     return (
       <button
         type="button"
         className={`Question__button${checked ? '' : ' -disabled'}`}
-        disabled={checked === false ? true : false}
+        disabled={checked === false}
       >
         {cta}
       </button>
-    )
-  }
+    );
+  };
 
   return (
     <section className="Question Question-3">
       <div className="Question__progress">
         <Link to="/question2">
-          <button className="Question__progress__back">
+          <button type="button" className="Question__progress__back">
             <FontAwesomeIcon icon="chevron-left" />
           </button>
         </Link>
@@ -61,7 +57,7 @@ const Question3: React.FunctionComponent = () => {
               />
               <label htmlFor={`id-${index}`}>{radioItem}</label>
             </div>
-          )
+          );
         })}
       </div>
       <Link to="/elaborating">
@@ -71,7 +67,7 @@ const Question3: React.FunctionComponent = () => {
         <img alt={id} src={question3Image} />
       </figure>
     </section>
-  )
-}
+  );
+};
 
-export default Question3
+export default Question3;

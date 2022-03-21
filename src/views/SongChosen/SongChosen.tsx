@@ -1,15 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// eslint-disable-next-line no-use-before-define
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface SongChosenProps {
-  titleChoice: string
-  artistChoice: string
-  imageUrlChoice: string
-  imageModalAlt: string
-  songChangeLabel: string,
-	isPlaying: boolean,
-	start: () => void,
-	stop: () => void,
-  handleChangeSong: () => void
+  titleChoice: string;
+  artistChoice: string;
+  imageUrlChoice: string;
+  imageModalAlt: string;
+  songChangeLabel: string;
+  isPlaying: boolean;
+  start: () => void;
+  stop: () => void;
+  handleChangeSong: () => void;
 }
 
 const SongChosen: React.FunctionComponent<SongChosenProps> = ({
@@ -18,9 +20,9 @@ const SongChosen: React.FunctionComponent<SongChosenProps> = ({
   imageUrlChoice,
   imageModalAlt,
   songChangeLabel,
-	isPlaying,
-	start,
-	stop,
+  isPlaying,
+  start,
+  stop,
   handleChangeSong,
 }) => {
   return (
@@ -32,20 +34,24 @@ const SongChosen: React.FunctionComponent<SongChosenProps> = ({
       </figure>
       <div className="SongChosen__buttons">
         {!isPlaying ? (
-          <button className="SongChosen__play" onClick={start}>
+          <button type="button" className="SongChosen__play" onClick={start}>
             <FontAwesomeIcon icon="play" />
           </button>
         ) : (
-          <button className="SongChosen__stop" onClick={stop}>
+          <button type="button" className="SongChosen__stop" onClick={stop}>
             <FontAwesomeIcon icon="stop" />
           </button>
         )}
-        <button className="SongChosen__change" onClick={handleChangeSong}>
+        <button
+          type="button"
+          className="SongChosen__change"
+          onClick={handleChangeSong}
+        >
           {songChangeLabel}
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SongChosen
+export default SongChosen;

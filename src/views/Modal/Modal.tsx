@@ -1,7 +1,8 @@
-const Modal: React.FunctionComponent = () => {
-	return(
-		<div className="Modal"/>
-	)
-}
+// eslint-disable-next-line no-use-before-define
+import React from 'react';
 
-export default Modal
+const Modal: React.FunctionComponent = () => {
+  return <div className="Modal" />;
+};
+
+export default Modal;

@@ -1,47 +1,43 @@
-import { useState } from 'react'
+// eslint-disable-next-line no-use-before-define
+import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import question2Image from '../../assets/image-question-02.png'
-import copyText from '../../assets/copyText'
+import question2Image from '../../assets/image-question-02.png';
+import copyText from '../../assets/copyText';
 
 interface Question2Props {
-  headline: string
-  id: string
-  radioItems: string[]
-  cta: string
-  progress: string
+  headline: string;
+  id: string;
+  radioItems: string[];
+  cta: string;
+  progress: string;
 }
 
 const Question2: React.FunctionComponent = () => {
-  const [checked, setChecked] = useState<boolean>(false)
-  const handleChange: () => void = () => setChecked(true)
-  const {
-    headline,
-    id,
-    radioItems,
-    cta,
-    progress,
-  }: Question2Props = copyText.question2
+  const [checked, setChecked] = useState<boolean>(false);
+  const handleChange: () => void = () => setChecked(true);
+  const { headline, id, radioItems, cta, progress }: Question2Props =
+    copyText.question2;
 
   const SubmitButton = () => {
     return (
       <button
         type="button"
         className={`Question__button${checked ? '' : ' -disabled'}`}
-        disabled={checked === false ? true : false}
+        disabled={checked === false}
       >
         {cta}
       </button>
-    )
-  }
+    );
+  };
 
   return (
     <section className="Question Question-2">
       <div className="Question__progress">
         <Link to="/question1">
-          <button className="Question__progress__back">
+          <button type="button" className="Question__progress__back">
             <FontAwesomeIcon icon="chevron-left" />
           </button>
         </Link>
@@ -61,17 +57,17 @@ const Question2: React.FunctionComponent = () => {
               />
               <label htmlFor={`id-${index}`}>{radioItem}</label>
             </div>
-          )
+          );
         })}
       </div>
       <Link to="/question3">
         <SubmitButton />
       </Link>
       <figure className="Question__image">
-        <img alt={id} src={question2Image}/>
+        <img alt={id} src={question2Image} />
       </figure>
     </section>
-  )
-}
+  );
+};
 
-export default Question2
+export default Question2;
