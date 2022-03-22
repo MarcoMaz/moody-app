@@ -1,4 +1,21 @@
 .Elaborating {
+  width: 100vw;
+
+	@include phone-grid;
+
+  &__headline,
+  &__image {
+    grid-column: span 4;
+  }
+
+  &__headline {
+    min-height: 2rem;
+  }
+
+  &__spinner {
+    grid-column: 2 / span 2;
+    height: fit-content;
+  }
 
 	&__spinner::after {
 		animation: spinner 3s linear infinite;
@@ -9,7 +26,13 @@
 		display: block;
 		height: 4rem;
 		width: 4rem;
+    position: relative;
+    left: calc(50% - 2rem);
 	}
+
+  &__button {
+    grid-column: 2 / span 2;
+  }
 }
 
 @keyframes spinner {

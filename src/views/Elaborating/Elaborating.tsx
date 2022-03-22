@@ -64,13 +64,11 @@ const Elaborating: React.FunctionComponent = () => {
           </figure>
         </>
       )}
-      <Link to="/results">
-        {isElaboratingVisible && (
-          <button type="button" className="Elaborating__button">
-            {cta}
-          </button>
-        )}
-      </Link>
+      {isElaboratingVisible && (
+        <Link to="/results" className="Elaborating__button">
+          <button type="button">{cta}</button>
+        </Link>
+      )}
     </section>
   );
 };
