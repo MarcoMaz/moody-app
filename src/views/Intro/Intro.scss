@@ -2,20 +2,15 @@
 
   @include phone-grid;
 
-  &__headline {
-    grid-column: span 4;
-  }
-
-  &__image {
-    grid-column: span 4;
-  }
-
-  &__subheadline {
-    grid-column: span 4;
-  }
-
+  &__headline,
+  &__image,
+  &__subheadline,
   &__paragraph {
     grid-column: span 4;
+  }
+
+  &__button {
+    grid-column: 2 / span 2;
   }
 
 	&__headline span {

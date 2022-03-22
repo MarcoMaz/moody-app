@@ -46,10 +46,8 @@ const Intro: React.FunctionComponent = () => {
           {paragraph}
         </p>
       ))}
-      <Link to="/question1">
-        <button type="button" className="Intro__button">
-          {cta}
-        </button>
+      <Link to="/question1" className="Intro__button">
+        <button type="button">{cta}</button>
       </Link>
     </section>
   );

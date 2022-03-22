@@ -26,10 +26,6 @@ $vertical-spacing: (
 	@include base-grid;
 
 	grid-template-columns: repeat(4, 1fr);
-
-	> * {
-		grid-column: span 4;
-	}
 }
 
 @mixin tablet-grid {
