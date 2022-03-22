@@ -1,6 +1,32 @@
 .SongChosen {
+
+  @include phone-grid;
+
 	background: $white;
 	border-radius: 0.5rem;
+  height: 350px;
+  left: calc((100vw - 300px) / 2);
 	position: fixed;
+  top: calc((100vh - 350px) / 2);
+  width: 300px;
 	z-index: 9999;
+
+  &__title,
+  &__artist,
+  &__buttons {
+    grid-column: span 4;
+  }
+
+  &__image {
+    grid-column: 2 / span 2;
+  }
+
+  &__buttons {
+
+    text-align: center;
+
+    button:last-child {
+      margin-left: 1rem;
+    }
+  }
 }
