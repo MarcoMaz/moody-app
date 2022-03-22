@@ -153,8 +153,8 @@ const Results: React.FunctionComponent = () => {
             handleChangeSong={clickChangeSong}
           />
         )}
-        <Link to="/">
-          <button type="button" className="Results__back" onClick={clickReset}>
+        <Link to="/" className="Results__back">
+          <button type="button" onClick={clickReset}>
             {startOver}
           </button>
         </Link>

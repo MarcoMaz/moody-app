@@ -1,4 +1,31 @@
 .Results {
 	// styles here
 	
+  @include phone-grid;
+
+  &__headline,
+  &__subheadline,
+  &__songs {
+    grid-column: span 4;
+  }
+
+  &__songs {
+
+    @include phone-grid;
+
+    row-gap: 2rem;
+
+    .Results__song {
+      grid-column: span 2;
+
+      &-title,
+      &-artist {
+        text-align: center;
+      }
+    }
+  }
+
+  &__back {
+    grid-column: 2 / span 2;
+  }
 }
