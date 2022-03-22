@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 }	
 
 body {
-	background-color: $titan-white;
+  background-color: $titan-white;
 	color: $mirage;
 	font-family: $fontFamily;
   -ms-overflow-style: none;  	/* IE and Edge */
@@ -83,9 +83,9 @@ img {
 }
 
 .App {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  height: 100vh;
+  padding: 1rem 0.5rem;
 }
 
 figure img {
