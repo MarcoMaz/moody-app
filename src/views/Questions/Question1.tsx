@@ -27,7 +27,7 @@ const Question1: React.FunctionComponent = () => {
     return (
       <button
         type="button"
-        className={`Question__button${username ? '' : ' -disabled'}`}
+        className={`Question__button__submit${username ? '' : ' -disabled'}`}
         disabled={username === ''}
       >
         {cta}
@@ -56,7 +56,7 @@ const Question1: React.FunctionComponent = () => {
           required
         />
       </div>
-      <Link to="/question2">
+      <Link to="/question2" className="Question__button">
         <SubmitButton />
       </Link>
       <figure className="Question__image">

@@ -1,23 +1,59 @@
 .Question {
 
-	// Styling for both type of questions
-	&__progress__back {
-		background: transparent;
-		color: $mirage;
-		padding: unset;
-	}
+  @include phone-grid;
 
-	&__button.-disabled {
-		background-color: lighten($mirage, 60%);
-	}
+  &__progress,
+  &__label,
+  &__image,
+  &__radio {
+    grid-column: span 4;
+  }
+
+  &__progress {
+
+    @include phone-grid;
+
+    &__numbers {
+      grid-column: -2 / span 1;
+    }
+
+    &__back {
+      grid-column: span 1;
+    }
+
+    &__back button {
+      background: transparent;
+      color: $mirage;
+      padding: unset;
+    }
+  }
+
+  &__button {
+    grid-column: 2 / span 2;
+    height: 0;
+    
+    &__submit.-disabled {
+      background-color: lighten($mirage, 60%);
+    }
+  }
 
 	// Styling for Question #1
 	&__label {
 		text-align: center;
 	}
 
+  &__radio {
+
+    @include phone-grid;
+
+    :first-child {
+      grid-column: span 4;
+    }
+  }
+
 	// Styling for Questions #2 and #3
 	&__radio-item {
+    grid-column: 2 / span 2;
 		position: relative;	
 	}	
 }

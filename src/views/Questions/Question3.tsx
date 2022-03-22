@@ -25,7 +25,7 @@ const Question3: React.FunctionComponent = () => {
     return (
       <button
         type="button"
-        className={`Question__button${checked ? '' : ' -disabled'}`}
+        className={`Question__button__submit${checked ? '' : ' -disabled'}`}
         disabled={checked === false}
       >
         {cta}
@@ -36,8 +36,8 @@ const Question3: React.FunctionComponent = () => {
   return (
     <section className="Question Question-3">
       <div className="Question__progress">
-        <Link to="/question2">
-          <button type="button" className="Question__progress__back">
+        <Link to="/question2" className="Question__progress__back">
+          <button type="button">
             <FontAwesomeIcon icon="chevron-left" />
           </button>
         </Link>
@@ -60,7 +60,7 @@ const Question3: React.FunctionComponent = () => {
           );
         })}
       </div>
-      <Link to="/elaborating">
+      <Link to="/elaborating" className="Question__button">
         <SubmitButton />
       </Link>
       <figure className="Question__image">
