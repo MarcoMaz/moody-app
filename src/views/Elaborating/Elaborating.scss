@@ -12,6 +12,10 @@
     min-height: 2rem;
   }
 
+  &__image {
+    text-align: center;
+  }
+
   &__spinner {
     grid-column: 2 / span 2;
     height: fit-content;
@@ -32,6 +36,20 @@
 
   &__button {
     grid-column: 2 / span 2;
+  }
+
+  @include tablet-viewport {
+
+    @include tablet-grid;
+
+    &__headline,
+    &__image {
+      grid-column: span 12;
+    }  
+
+    &__button {
+      grid-column: 5 / span 4;
+    }
   }
 }
 

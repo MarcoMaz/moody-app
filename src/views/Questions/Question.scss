@@ -30,7 +30,7 @@
 
   &__button {
     grid-column: 2 / span 2;
-    height: 0;
+    margin-top: 0.5rem;
     
     &__submit.-disabled {
       background-color: lighten($mirage, 60%);
@@ -39,7 +39,21 @@
 
 	// Styling for Question #1
 	&__label {
-		text-align: center;
+
+    @include phone-grid;
+
+    label,
+    input {
+      margin-bottom: 0.5rem;
+    }
+
+    label {
+      grid-column: span 4;
+    }
+
+    input {
+      grid-column: 2 / span 2;
+    }
 	}
 
   &__radio {
@@ -56,4 +70,58 @@
     grid-column: 2 / span 2;
 		position: relative;	
 	}	
+
+  @include tablet-viewport {
+
+    @include tablet-grid;
+
+    &__progress,
+    &__label,
+    &__radio,
+    &__image {
+      grid-column: span 12;
+    }
+
+    &__radio-item input[type=radio] + label:before { 
+      top: 0.45rem;
+    }
+
+    &__button {
+      grid-column: 5 / span 4;
+    }
+  }
+
+  @include desktop-viewport {
+
+    @include desktop-grid;
+
+    &__progress,
+    &__label,
+    &__radio,
+    &__image {
+      grid-column: span 12;
+    }
+
+    &__label {
+      
+      @include desktop-grid;
+
+      label {
+        grid-column: span 12;
+      }
+
+      input {
+        grid-column: 3 / span 8;
+      }
+    }
+
+    &__radio-item input[type=radio] + label:before { 
+      top: 0.25rem;
+    }
+
+    &__button {
+      grid-column: 5 / span 4;
+      margin-top: 1rem;
+    }
+  }
 }

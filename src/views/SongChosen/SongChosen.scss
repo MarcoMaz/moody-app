@@ -17,6 +17,10 @@
     grid-column: span 4;
   }
 
+  &__title {
+    margin: auto;
+  }
+
   &__image {
     grid-column: 2 / span 2;
   }
@@ -28,5 +32,19 @@
     button:last-child {
       margin-left: 1rem;
     }
+  }
+
+  @include tablet-viewport {
+    height: 500px;
+    left: calc((100vw - 400px) / 2);
+    top: calc((100vh - 500px) / 2);
+    width: 400px;
+  }
+
+  @include desktop-viewport {
+    height: 550px;
+    left: calc((100vw - 500px) / 2);
+    top: calc((100vh - 550px) / 2);
+    width: 500px;
   }
 }
