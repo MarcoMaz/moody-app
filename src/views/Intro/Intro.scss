@@ -8,16 +8,45 @@
   &__paragraph {
     grid-column: span 4;
   }
-
-  &__button {
-    grid-column: 2 / span 2;
-  }
-
+  
 	&__headline span {
-		background-size: 2rem;
+    background-size: 2rem;
     background-position-x: 0.25rem;
     background-position-y: 0.125rem;
 		background-repeat: no-repeat;
 		padding-left: 2rem;
 	}
+
+  &__image {
+    text-align: center;
+  }
+
+  &__paragraph:last-of-type {
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    grid-column: 2 / span 2;
+  }
+
+  @include tablet-viewport {
+
+    @include tablet-grid;
+    
+    &__headline,
+    &__image,
+    &__subheadline,
+    &__paragraph {
+      grid-column: span 12;
+    }  
+
+    &__headline span {
+      background-size: 2.25rem;
+      background-position-y: 0.25rem;
+    }
+
+    &__button {
+      grid-column: 5 / span 4;
+    }
+  }
 }

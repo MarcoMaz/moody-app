@@ -33,10 +33,6 @@ $vertical-spacing: (
 	@include base-grid;
 
 	grid-template-columns: repeat(12, 1fr);
-
-	> * {
-		grid-column: span 12;
-	}
 }
 
 @mixin desktop-grid {
@@ -44,8 +40,4 @@ $vertical-spacing: (
 	@include base-grid;
 
 	grid-template-columns: repeat(12, 1fr);
-
-	> * {
-		grid-column: span 12;
-	}
 }
