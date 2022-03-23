@@ -83,8 +83,10 @@ img {
 }
 
 .App {
+  align-items: center;
   display: flex;
   height: 100vh;
+  justify-content: center;
   padding: 1rem 0.5rem;
 }
 
