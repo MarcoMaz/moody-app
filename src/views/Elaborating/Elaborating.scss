@@ -51,6 +51,13 @@
       grid-column: 5 / span 4;
     }
   }
+
+  @include desktop-viewport {
+
+    &__spinner {
+      grid-column: 6 / span 2;
+    }
+  }
 }
 
 @keyframes spinner {

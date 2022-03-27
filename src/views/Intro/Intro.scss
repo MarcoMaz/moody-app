@@ -49,4 +49,14 @@
       grid-column: 5 / span 4;
     }
   }
+
+  @include desktop-viewport {
+
+    &__headline span {
+      background-size: 3rem;
+      background-position-x: 0.5rem;
+      background-position-y: 0.125rem;
+      padding-left: 3rem;
+    }
+  }
 }

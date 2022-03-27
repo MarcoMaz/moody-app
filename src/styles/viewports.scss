@@ -11,7 +11,7 @@ $breakpoints: (
 }
 
 @mixin tablet-viewport {
-  @media (min-width: map-get($breakpoints, tablet) + 1) and (max-width: map-get($breakpoints, desktop)) { 
+  @media (min-width: map-get($breakpoints, tablet) + 1) { 
 		@content; 
 	}
 }

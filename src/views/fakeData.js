@@ -14,7 +14,6 @@ import wolfmotherImg from '../assets/cover-wolfmother.jpg';
 import denteImg from '../assets/cover-dente.jpg';
 import fooFightersImg from '../assets/cover-foo.jpg';
 import pinguiniImg from '../assets/cover-pinguini.jpg';
-import silvestriImg from '../assets/cover-silvestri.jpg';
 import vinicioCaposselaImg from '../assets/cover-vinicio.jpg';
 import zenCircusImg from '../assets/cover-zen.jpg';
 
@@ -78,11 +77,6 @@ const fakeData = [
     title: 'Woman',
     artist: 'Wolfmother',
     imageUrl: wolfmotherImg,
-  },
-  {
-    title: 'Occhi da Orientale',
-    artist: 'Daniele Silvestri',
-    imageUrl: silvestriImg,
   },
   {
     title: 'Scooby Doo',

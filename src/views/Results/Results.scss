@@ -65,30 +65,16 @@
 
   @include desktop-viewport {
 
-    @include desktop-grid;
-
-    &__headline,
-    &__subheadline,
-    &__songs {
-      grid-column: span 12;
-    }  
-
     &__subheadline,
     &__songs {
       margin-bottom: 1.5rem;
     }
 
     &__songs {
-      
-      @include desktop-grid;
 
       .Results__song {
         grid-column: span 3;
       }
-    }
-
-    &__back {
-      grid-column: 5 / span 4;
     }
   }
 }
