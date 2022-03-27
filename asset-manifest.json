@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/moody-app/static/css/main.f7b67181.chunk.css",
-    "main.js": "/moody-app/static/js/main.9225667e.chunk.js",
-    "main.js.map": "/moody-app/static/js/main.9225667e.chunk.js.map",
+    "main.css": "/moody-app/static/css/main.61712443.chunk.css",
+    "main.js": "/moody-app/static/js/main.4b031024.chunk.js",
+    "main.js.map": "/moody-app/static/js/main.4b031024.chunk.js.map",
     "runtime-main.js": "/moody-app/static/js/runtime-main.90e5d246.js",
     "runtime-main.js.map": "/moody-app/static/js/runtime-main.90e5d246.js.map",
     "static/js/2.5b8af094.chunk.js": "/moody-app/static/js/2.5b8af094.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/moody-app/index.html",
     "service-worker.js": "/moody-app/service-worker.js",
     "service-worker.js.map": "/moody-app/service-worker.js.map",
-    "static/css/main.f7b67181.chunk.css.map": "/moody-app/static/css/main.f7b67181.chunk.css.map",
+    "static/css/main.61712443.chunk.css.map": "/moody-app/static/css/main.61712443.chunk.css.map",
     "static/js/2.5b8af094.chunk.js.LICENSE.txt": "/moody-app/static/js/2.5b8af094.chunk.js.LICENSE.txt",
     "static/media/africa.32822943.mp3": "/moody-app/static/media/africa.32822943.mp3",
     "static/media/cover-deandre.06f105d5.jpg": "/moody-app/static/media/cover-deandre.06f105d5.jpg",
@@ -22,7 +22,6 @@
     "static/media/cover-pinguini.a55729fa.jpg": "/moody-app/static/media/cover-pinguini.a55729fa.jpg",
     "static/media/cover-rinogaetano.d915f59b.jpg": "/moody-app/static/media/cover-rinogaetano.d915f59b.jpg",
     "static/media/cover-sexpistols.30ed42b0.jpg": "/moody-app/static/media/cover-sexpistols.30ed42b0.jpg",
-    "static/media/cover-silvestri.9ff2f95c.jpg": "/moody-app/static/media/cover-silvestri.9ff2f95c.jpg",
     "static/media/cover-tenaciousd.ba7d9698.jpg": "/moody-app/static/media/cover-tenaciousd.ba7d9698.jpg",
     "static/media/cover-thebeatles.06575b47.jpg": "/moody-app/static/media/cover-thebeatles.06575b47.jpg",
     "static/media/cover-themcrookedvultures.66b8cc0a.jpg": "/moody-app/static/media/cover-themcrookedvultures.66b8cc0a.jpg",
@@ -42,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.90e5d246.js",
     "static/js/2.5b8af094.chunk.js",
-    "static/css/main.f7b67181.chunk.css",
-    "static/js/main.9225667e.chunk.js"
+    "static/css/main.61712443.chunk.css",
+    "static/js/main.4b031024.chunk.js"
   ]
 }
