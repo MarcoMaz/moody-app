@@ -41,13 +41,13 @@ const Intro: React.FunctionComponent = () => {
       </figure>
       <h2 className="Intro__subheadline">{subHeadline}</h2>
       {paragraphs.map((paragraph, index) => (
-        <p key={index} className="Intro__paragraph">
+        <p key={index} className="Intro__paragraph" role="paragraph">
           {paragraph}
         </p>
       ))}
-      {/* <Link to="/question1" className="Intro__button">
+      <Link to="/question1" className="Intro__button">
         <button type="button">{cta}</button>
-      </Link> */}
+      </Link>
     </section>
   );
 };
