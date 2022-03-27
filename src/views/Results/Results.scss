@@ -8,7 +8,8 @@
     grid-column: span 4;
   }
 
-  &__subheadline {
+  &__subheadline,
+  &__songs {
     margin-bottom: 0.5rem;
   }
 
@@ -16,7 +17,6 @@
 
     @include phone-grid;
 
-    margin-bottom: 0.5rem;
     row-gap: 2rem;
 
     .Results__song {
@@ -35,32 +35,31 @@
 
   @include tablet-viewport {
 
+    @include tablet-grid;
+
     &__headline,
     &__subheadline,
     &__songs {
       grid-column: span 12;
     }  
 
+    &__songs,
+    &__subheadline {
+      margin-bottom: 1rem;
+    }
+
     &__songs {
       
       @include tablet-grid;
-
-      margin-bottom: 1rem;
 
       .Results__song {
         grid-column: span 4;
       }
     }
 
-    &__subheadline {
-      margin-bottom: 1rem;
-    }
-
     &__back {
       grid-column: 5 / span 4;
     }
-
-    @include tablet-grid;
   }
 
   @include desktop-viewport {
@@ -70,11 +69,8 @@
       margin-bottom: 1.5rem;
     }
 
-    &__songs {
-
-      .Results__song {
-        grid-column: span 3;
-      }
+    &__songs .Results__song {
+      grid-column: span 3;
     }
   }
 }

@@ -111,7 +111,7 @@
     }
 
     &__radio-item input[type=radio]:checked + label:after {
-      top: calc(1.5rem / 2);
+      top: 0.75rem;
     }
 
     &__button {

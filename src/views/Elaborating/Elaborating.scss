@@ -19,20 +19,20 @@
   &__spinner {
     grid-column: 2 / span 2;
     height: fit-content;
-  }
 
-	&__spinner::after {
-		animation: spinner 3s linear infinite;
-		border: 0.5rem solid $mirage;
-		border-color: $mirage transparent;
-		border-radius: 50%;
-		content: " ";
-		display: block;
-		height: 4rem;
-		width: 4rem;
-    position: relative;
-    left: calc(50% - 2rem);
-	}
+    &::after {
+      animation: spinner 3s linear infinite;
+      border: 0.5rem solid $mirage;
+      border-color: $mirage transparent;
+      border-radius: 50%;
+      content: " ";
+      display: block;
+      height: 4rem;
+      left: calc(50% - 2rem);
+      position: relative;
+      width: 4rem;
+    }
+  }
 
   &__button {
     grid-column: 2 / span 2;

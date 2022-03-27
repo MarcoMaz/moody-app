@@ -1,14 +1,28 @@
+$song-chosen-window-width--phone: 300px;
+$song-chosen-window-height--phone: 350px;
+
+$song-chosen-window-width--tablet: 400px;
+$song-chosen-window-height--tablet: 500px;
+
+$song-chosen-window-width--desktop: 500px;
+$song-chosen-window-height--desktop: 550px;
+
+@mixin findPostion($sizeX, $sizeY){
+  height: $sizeX;
+  left: calc((100vw - #{$sizeX}) / 2);
+  top: calc((100vh - #{$sizeY}) / 2);
+  width: $sizeY;
+}
+
 .SongChosen {
 
   @include phone-grid;
 
+  @include findPostion($song-chosen-window-width--phone, $song-chosen-window-height--phone);
+
 	background: $white;
 	border-radius: 0.5rem;
-  height: 350px;
-  left: calc((100vw - 300px) / 2);
 	position: fixed;
-  top: calc((100vh - 350px) / 2);
-  width: 300px;
 	z-index: 9999;
 
   &__title,
@@ -35,16 +49,10 @@
   }
 
   @include tablet-viewport {
-    height: 500px;
-    left: calc((100vw - 400px) / 2);
-    top: calc((100vh - 500px) / 2);
-    width: 400px;
+    @include findPostion($song-chosen-window-width--tablet, $song-chosen-window-height--tablet);
   }
 
   @include desktop-viewport {
-    height: 550px;
-    left: calc((100vw - 500px) / 2);
-    top: calc((100vh - 550px) / 2);
-    width: 500px;
+    @include findPostion($song-chosen-window-width--desktop, $song-chosen-window-height--desktop);
   }
 }
