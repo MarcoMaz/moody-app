@@ -25,7 +25,6 @@ const Intro: React.FunctionComponent = () => {
     cta,
   }: IntroProps = copyText.intro;
   // Cut the first letter and use a background image instead
-  const appNameWithImage: string = appName.slice(1);
   const backgroundImage: string = background;
   const introImageSrc: string = introImage;
 
@@ -34,7 +33,7 @@ const Intro: React.FunctionComponent = () => {
       <h1 className="Intro__headline">
         {headline}
         <span style={{ backgroundImage: `url(${backgroundImage})` }}>
-          {appNameWithImage}
+          {appName}
         </span>
       </h1>
       <figure className="Intro__image">
@@ -46,9 +45,9 @@ const Intro: React.FunctionComponent = () => {
           {paragraph}
         </p>
       ))}
-      <Link to="/question1" className="Intro__button">
+      {/* <Link to="/question1" className="Intro__button">
         <button type="button">{cta}</button>
-      </Link>
+      </Link> */}
     </section>
   );
 };
