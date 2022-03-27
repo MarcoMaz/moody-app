@@ -9,6 +9,7 @@
   }
 
   &__headline {
+    margin-bottom: 2rem;
     min-height: 2rem;
   }
 
@@ -16,22 +17,16 @@
     text-align: center;
   }
 
-  &__spinner {
-    grid-column: 2 / span 2;
-    height: fit-content;
+  &__spinner::after {
 
-    &::after {
-      animation: spinner 3s linear infinite;
-      border: 0.5rem solid $mirage;
-      border-color: $mirage transparent;
-      border-radius: 50%;
-      content: " ";
-      display: block;
-      height: 4rem;
-      left: calc(50% - 2rem);
-      position: relative;
-      width: 4rem;
-    }
+    @include findPostion(4rem, 4rem);
+
+    animation: spinner 3s linear infinite;
+    border: 0.5rem solid $mirage;
+    border-color: $mirage transparent;
+    border-radius: 50%;
+    content: " ";
+    display: block;
   }
 
   &__button {
@@ -50,9 +45,6 @@
     &__button {
       grid-column: 5 / span 4;
     }
-  }
-
-  @include desktop-viewport {
 
     &__spinner {
       grid-column: 6 / span 2;

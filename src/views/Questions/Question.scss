@@ -28,6 +28,10 @@
     }
   }
 
+  &__image {
+    text-align: center;
+  }
+
   &__button {
     grid-column: 2 / span 2;
     margin-top: 0.5rem;
@@ -52,7 +56,9 @@
     }
 
     input {
+      border: 1px solid $mirage;
       grid-column: 2 / span 2;
+      max-width: 100%; // Fix for Firefox;
     }
 	}
 

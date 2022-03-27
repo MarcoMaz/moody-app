@@ -7,13 +7,6 @@ $song-chosen-window-height--tablet: 500px;
 $song-chosen-window-width--desktop: 500px;
 $song-chosen-window-height--desktop: 550px;
 
-@mixin findPostion($sizeX, $sizeY){
-  height: $sizeX;
-  left: calc((100vw - #{$sizeX}) / 2);
-  top: calc((100vh - #{$sizeY}) / 2);
-  width: $sizeY;
-}
-
 .SongChosen {
 
   @include phone-grid;
@@ -22,7 +15,6 @@ $song-chosen-window-height--desktop: 550px;
 
 	background: $white;
 	border-radius: 0.5rem;
-	position: fixed;
 	z-index: 9999;
 
   &__title,
