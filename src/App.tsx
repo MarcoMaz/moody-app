@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 // eslint-disable-next-line no-use-before-define
 import React, { useState, createContext } from 'react';
@@ -25,8 +26,10 @@ interface MoodifyProps {
   setUsername: React.Dispatch<React.SetStateAction<string>>;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-export const Moodify = createContext<MoodifyProps>(null!);
+export const Moodify = createContext<MoodifyProps>({
+  username: '',
+  setUsername: () => {},
+});
 
 library.add(fab, faPlay, faStop, faChevronLeft);
 
