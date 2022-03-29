@@ -59,11 +59,13 @@ const Elaborating: React.FunctionComponent = () => {
           <h1 className="Elaborating__headline">
             {headline} <span>{username}</span>.
           </h1>
-          <figure className="Elaborating__image">
+          <figure className="Elaborating__image" data-testid="figure">
             <img alt={imageAlt} src={elaboratingImage} />
           </figure>
           <Link to="/results" className="Elaborating__button">
-            <button type="button">{cta}</button>
+            <button type="button" data-testid="show-me-button">
+              {cta}
+            </button>
           </Link>
         </>
       )}

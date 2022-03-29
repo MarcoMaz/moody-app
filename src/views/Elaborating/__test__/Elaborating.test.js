@@ -27,7 +27,7 @@ describe('Elaborating View renders', () => {
     jest.useFakeTimers();
     jest.runAllTimers();
     render(ElaboratingElement);
-    const imageElement = await screen.findByRole('figure');
+    const imageElement = await screen.findByTestId('figure');
     expect(imageElement).toBeInTheDocument();
   });
 
@@ -35,9 +35,7 @@ describe('Elaborating View renders', () => {
     jest.useFakeTimers();
     jest.runAllTimers();
     render(ElaboratingElement);
-    const buttonElement = await screen.findByRole('button', {
-      name: 'Show me the result',
-    });
+    const buttonElement = await screen.findByTestId('show-me-button');
     expect(buttonElement).toBeInTheDocument();
   });
 });
