@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/moody-app/static/css/main.61712443.chunk.css",
-    "main.js": "/moody-app/static/js/main.4b031024.chunk.js",
-    "main.js.map": "/moody-app/static/js/main.4b031024.chunk.js.map",
-    "runtime-main.js": "/moody-app/static/js/runtime-main.90e5d246.js",
-    "runtime-main.js.map": "/moody-app/static/js/runtime-main.90e5d246.js.map",
-    "static/js/2.5b8af094.chunk.js": "/moody-app/static/js/2.5b8af094.chunk.js",
-    "static/js/2.5b8af094.chunk.js.map": "/moody-app/static/js/2.5b8af094.chunk.js.map",
-    "static/js/3.0a7f845d.chunk.js": "/moody-app/static/js/3.0a7f845d.chunk.js",
-    "static/js/3.0a7f845d.chunk.js.map": "/moody-app/static/js/3.0a7f845d.chunk.js.map",
+    "main.css": "/moody-app/static/css/main.50201e7e.chunk.css",
+    "main.js": "/moody-app/static/js/main.0c1de5dd.chunk.js",
+    "main.js.map": "/moody-app/static/js/main.0c1de5dd.chunk.js.map",
+    "runtime-main.js": "/moody-app/static/js/runtime-main.30f41610.js",
+    "runtime-main.js.map": "/moody-app/static/js/runtime-main.30f41610.js.map",
+    "static/js/2.0407e4f1.chunk.js": "/moody-app/static/js/2.0407e4f1.chunk.js",
+    "static/js/2.0407e4f1.chunk.js.map": "/moody-app/static/js/2.0407e4f1.chunk.js.map",
+    "static/js/3.79b40310.chunk.js": "/moody-app/static/js/3.79b40310.chunk.js",
+    "static/js/3.79b40310.chunk.js.map": "/moody-app/static/js/3.79b40310.chunk.js.map",
     "index.html": "/moody-app/index.html",
     "service-worker.js": "/moody-app/service-worker.js",
     "service-worker.js.map": "/moody-app/service-worker.js.map",
-    "static/css/main.61712443.chunk.css.map": "/moody-app/static/css/main.61712443.chunk.css.map",
-    "static/js/2.5b8af094.chunk.js.LICENSE.txt": "/moody-app/static/js/2.5b8af094.chunk.js.LICENSE.txt",
+    "static/css/main.50201e7e.chunk.css.map": "/moody-app/static/css/main.50201e7e.chunk.css.map",
+    "static/js/2.0407e4f1.chunk.js.LICENSE.txt": "/moody-app/static/js/2.0407e4f1.chunk.js.LICENSE.txt",
     "static/media/africa.32822943.mp3": "/moody-app/static/media/africa.32822943.mp3",
     "static/media/cover-deandre.06f105d5.jpg": "/moody-app/static/media/cover-deandre.06f105d5.jpg",
     "static/media/cover-dente.a813f720.jpg": "/moody-app/static/media/cover-dente.a813f720.jpg",
@@ -39,9 +39,9 @@
     "static/media/image-question-03.b8b9a513.png": "/moody-app/static/media/image-question-03.b8b9a513.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.90e5d246.js",
-    "static/js/2.5b8af094.chunk.js",
-    "static/css/main.61712443.chunk.css",
-    "static/js/main.4b031024.chunk.js"
+    "static/js/runtime-main.30f41610.js",
+    "static/js/2.0407e4f1.chunk.js",
+    "static/css/main.50201e7e.chunk.css",
+    "static/js/main.0c1de5dd.chunk.js"
   ]
 }
