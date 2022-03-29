@@ -154,7 +154,7 @@ const Results: React.FunctionComponent = () => {
           />
         )}
         <Link to="/" className="Results__back">
-          <button type="button" onClick={clickReset}>
+          <button type="button" data-testid="back-button" onClick={clickReset}>
             {startOver}
           </button>
         </Link>
