@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Modal: React.FunctionComponent = () => {
-  return <div className="Modal" />;
+  return <div className="Modal" data-testid="modal" />;
 };
 
 export default Modal;
