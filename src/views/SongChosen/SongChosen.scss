@@ -32,11 +32,17 @@ $song-chosen-window-height--desktop: 550px;
   }
 
   &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 
-    text-align: center;
+    button {
+      align-items: center;
+      display: flex;
 
-    button:last-child {
-      margin-left: 1rem;
+      &:last-child {
+        margin-left: 1rem;
+      }
     }
   }
 

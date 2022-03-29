@@ -4,13 +4,6 @@
 import React, { useState, createContext } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import {
-  faChevronLeft,
-  faPlay,
-  faStop,
-} from '@fortawesome/free-solid-svg-icons';
 import Intro from './views/Intro/Intro';
 import Question1 from './views/Questions/Question1';
 import Question2 from './views/Questions/Question2';
@@ -30,8 +23,6 @@ export const Moodify = createContext<MoodifyProps>({
   username: '',
   setUsername: () => {},
 });
-
-library.add(fab, faPlay, faStop, faChevronLeft);
 
 function App() {
   const [username, setUsername] = useState('');

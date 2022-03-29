@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaPlay, FaStop } from 'react-icons/fa';
 
 interface SongChosenProps {
   titleChoice: string;
@@ -35,11 +35,11 @@ const SongChosen: React.FunctionComponent<SongChosenProps> = ({
       <div className="SongChosen__buttons">
         {!isPlaying ? (
           <button type="button" className="SongChosen__play" onClick={start}>
-            <FontAwesomeIcon icon="play" />
+            <FaPlay />
           </button>
         ) : (
           <button type="button" className="SongChosen__stop" onClick={stop}>
-            <FontAwesomeIcon icon="stop" />
+            <FaStop />
           </button>
         )}
         <button

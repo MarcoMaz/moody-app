@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaChevronLeft } from 'react-icons/fa';
 
 import question3Image from '../../assets/image-question-03.png';
 import copyText from '../../assets/copyText';
@@ -38,7 +38,7 @@ const Question3: React.FunctionComponent = () => {
       <div className="Question__progress">
         <Link to="/question2" className="Question__progress__back">
           <button type="button">
-            <FontAwesomeIcon icon="chevron-left" />
+            <FaChevronLeft aria-label="chevron-left-icon" />
           </button>
         </Link>
         <span className="Question__progress__numbers">{progress}</span>
