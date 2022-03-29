@@ -51,7 +51,7 @@ const Elaborating: React.FunctionComponent = () => {
       {!isElaboratingVisible && (
         <>
           <h1 className="Elaborating__headline">{newHeadline}</h1>
-          <div className="Elaborating__spinner" />
+          <div className="Elaborating__spinner" data-testid="spinner" />
         </>
       )}
       {isElaboratingVisible && (
@@ -62,12 +62,10 @@ const Elaborating: React.FunctionComponent = () => {
           <figure className="Elaborating__image">
             <img alt={imageAlt} src={elaboratingImage} />
           </figure>
+          <Link to="/results" className="Elaborating__button">
+            <button type="button">{cta}</button>
+          </Link>
         </>
-      )}
-      {isElaboratingVisible && (
-        <Link to="/results" className="Elaborating__button">
-          <button type="button">{cta}</button>
-        </Link>
       )}
     </section>
   );
